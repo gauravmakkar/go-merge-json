@@ -1,0 +1,19 @@
+{
+  "name": "go-merge-json",
+  "version": "1.0.0",
+  "description": "The Node based utility used to merge multiple json files into one.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravmakkar/go-merge-json.git"
+  },
+  "author": "Gaurav Makkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gauravmakkar/go-merge-json/issues"
+  },
+  "homepage": "https://github.com/gauravmakkar/go-merge-json#readme"
+}
