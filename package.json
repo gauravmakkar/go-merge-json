@@ -4,7 +4,7 @@
   "description": "The Node based utility used to merge multiple json files into one.",
   "main": "index.js",
   "bin": {
-    "go-merge-json": "node ./index.js"
+    "go-merge-json": "./index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
