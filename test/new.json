@@ -1,4 +1,3983 @@
 {
-  "a": "b",
-  "new": "new"
+  "title": "MphRx",
+  "ofLabel":"of",
+  "dashboard": {
+    "patients": "Patients",
+    "averageVisitsPerMonth": "Average Visits Per Month",
+    "gproMatrics": "GPRO Metrics",
+    "noItems": "No Items",
+    "addWidgetLabel": "Widget Gallery",
+    "refreshWidgetLabel": "Refresh",
+    "removeWidgetConfirmationText": "Do you want to remove this widget from your dashboard?",
+    "metricsCompScore": "Metrics Compliance Score",
+    "patientSatisfactionLabel": "Patient Satisfaction",
+    "nonComplianceLabel": "Non Compliance",
+    "alertsLabel": "Alerts",
+    "attentionLabel": "Attention",
+    "totalPatientVolumeText": "of total patient volume",
+    "saveWidgetForm": {
+      "header": "Create Widget",
+      "nameLabel": "Name",
+      "sourceUrlLabel": "Source URL",
+      "fullPageUrlLabel": "Full Page URL",
+      "responseTypeLabel": "Response Type",
+      "iFrameResponseText": "IFrame",
+      "jsonResponseText": "JSON",
+      "chratResponseText": "Chart",
+      "chartText": "Chart",
+      "requestMethodLabel": "Request Method",
+      "getRequestText": "Get",
+      "postRequestText": "Post",
+      "fileSystemPathLabel": "File System Path",
+      "applicableUserTypeLabel": "Widget For",
+      "selectApplicableUserTypeText": "Please select",
+      "applicableClinicalUserText": "Clinical",
+      "applicablePatientText": "Patient",
+      "availableSizeLabel": "Available Sizes",
+      "sizeLabel": "Size",
+      "availableSizes": {
+        "SMALL": "Small",
+        "MEDIUM": "Medium",
+        "WIDE": "Wide",
+        "LARGE": "Large",
+        "EXTRA_WIDE": "Extra Wide"
+      },
+      "availableUserTypes": {
+        "Clinical": "Clinical",
+        "Patient": "Patient"
+      },
+      "availableContexts": {
+        "CLINICAL_DASHBOARD": "Clinical Dashboard",
+        "PATIENT_DASHBOARD": "Patient Dashboard",
+        "PATIENT_OVERVIEW": "Patient Overview"
+      },
+      "smallSizeText": "Small",
+      "mediumSizeText": "Medium",
+      "wideSizeText": "Wide",
+      "extraWideSizeText": "Extra Wide",
+      "largeSizeText": "Large",
+      "extraLargeSizeText": "Extra Large",
+      "contextLabel": "Widget Context",
+      "selectContextText": "Please Select",
+      "physicianContextText": "Physician Dashboard",
+      "patientContextText": "Patient Dashboard",
+      "patientOverviewContextText": "Patient Overview",
+      "paramProviderLabel": "Parameter Provider",
+      "descriptionLabel": "Description",
+      "paramProviderText": "Name your function with name urlProvider. For Example: function urlProvider(){ return 'test=test'}",
+      "createButtonText": "Save",
+      "cancelButtonText": "Cancel",
+      "errorText": {
+        "widgetNameErrorText": "Name of the widget can't be blank.",
+        "sourceURLErrorText": "Source URL can't be blank.",
+        "pageURLErrorText": "Page URL can't be blank.",
+        "contextErrorText": "Widget Context can't be blank."
+      }
+    },
+    "attentionImages": {
+      "labText": "Lab",
+      "scanText": "Scan",
+      "visitsText": "Visits",
+      "qaText": "Q&A",
+      "allRecordsText": "All Records"
+    },
+    "list": {
+      "header": "Dashboards",
+      "descriptionLabel": "Description",
+      "typeLabel": "Type",
+      "userTypeLabel": "User",
+      "contextLabel": "Context",
+      "lastUpdatedBy": "Last updated by",
+      "actionsLabel": "Actions",
+      "editButtonLabel": "Edit",
+      "noResultFoundText": "No results found",
+      "loadingText": "Loading..."
+    },
+    "search": {
+      "searchByKeywordLabel": "Keyword",
+      "searchButtonText": "Search"
+    },
+    "changeWidgetSizeText": "Change Size",
+    "otherActionText": "Others",
+    "removeWidgetText": "Remove",
+    "notAvailableWidgetSizeText": "Size cannot be changed"
+  },
+  "createOrder":{
+    "testNameLabel" : "Test Name",
+    "orderIdLabel" : "Order ID",
+    "selectTestLabel" : "Select Test",
+    "bodySiteLabel" : "Body Site",
+    "specimenLabel" : "Specimen",
+    "addNewTestLabel" : "Add New Test",
+    "encounterLabel" : "Encounter",
+    "orderDateAndTimeLabel" : "Order Date & Time",
+    "textNoteLabel" : " Text Note",
+    "testReasonLabel" : "Test Reason",
+    "physicianLabel" : "Physician",
+    "selectTestReasons" : "Select Test Reason(s)",
+    "patientNameLabel" : "Patient Name",
+    "patientInformationLabel" :"Patient Information",
+    "testTypeLabel" : "Test Type",
+    "duplicateTestLabel" : "Can't save duplicate tests",
+    "orderUpdateLabel" : "Order updated",
+    "otherDetailsLabel" : "Other details",
+    "uiSelectLabel" : "Please select",
+    "saveLabel" :"Save",
+    "placeOrderLabel" : "Place Order",
+    "testSavedLabel" : "Test successfully saved.",
+    "orderSavedLabel" : "Order successfully saved.",
+    "orderDataIncompleteLabel" : "Order data incomplete.",
+    "orderPlaceLabel" : "Order placed",
+    "saveTestLabel" : "Save Test",
+    "enterNotesLabel" : "Enter Notes",
+    "radLabel" : "Rad",
+    "labLabel" : "Lab",
+    "searchTestTypeLabel" : "Search a Test Type",
+    "searchBodySiteLabel" : "Select or search a Body Site",
+    "searchSpecimenLabel" : "Select or search a Test Specimen",
+    "noBodySiteLabel" : "Body Site not selected.",
+    "noSpecimenLabel" : "Specimen not selected.",
+    "orderSummary" :{
+      "printSummaryLabel" : "Print Summary",
+      "orderNumberLabel" : "Order Number",
+      "requestingProviderLabel" : "Requesting Provider",
+      "sentLabel" : "Sent",
+      "patientIdLabel" : "Patient Id",
+      "dobLabel" : "DOB",
+      "genderLabel" : "Gender",
+      "rpInfoLabel" : "Requesting Provider Information",
+      "rpNameLabel" : "Request Provider Name",
+      "phoneNoLabel" : "Phone",
+      "addressLabel" : "Address",
+      "codeLabel" : "Code"
+    },
+    "errorTexts" : {
+      "testRequired" : "Test is a mandatory field.",
+      "bodySiteRequired" : "Body site is a mandatory field.",
+      "specimenRequired" : "Specimen is a mandatory field.",
+      "duplicateTest" : "Test already selected.",
+      "testReasonRequiredLabel": "Test Reason is a mandatory field.",
+      "orderDateRequiredLabel" : "Order Date is a mandatory field.",
+      "specimenSelectedWithoutTest" : "Specimen can't be saved without adding a test.",
+      "bodySiteSelectedWithoutTest" : "Body site can't be saved without adding a test.",
+      "testNotAdded" : "Test must be saved to place an order",
+      "orderEncounterEmpty" : "Encounter must be added to place an order."
+    }
+  },
+  "login": {
+    "existingAccountLabel": "Existing Account",
+    "loginIdLabel": "Your Login ID",
+    "passwordLabel": "Password",
+    "forgotPasswordLabel": "Forgot Password",
+    "createNewAccountLink": "Create New Account",
+    "signUpButtonText": "Sign Up",
+    "poweredByText": "Powered by MphRx. All Rights Reserved.",
+    "loginButtonText": "Login",
+    "ldapLoginButtonText": "LDAP",
+    "SAMLAuthenticationLinkLabel": "SAML",
+    "authenticationFailureMessage": "Invalid username/password.",
+    "authenticationFailureMessageOnMaximumRetries": "Your account has been blocked.",
+    "sessionExpiredMessage": "User Session Expired, Please Login.",
+    "usernameOrPasswordBlankMessage": "Username or Password can not be blank.",
+    "otherLoginMessage": "OR Login with",
+    "facebookButtonText": "Login with Facebook",
+    "otherLoginLabel": "Sign in with",
+    "samlModalText": "Are you sure you want to login with SAML?",
+    "disabledMergedUserMessage": "This user account is disabled, please contact system administrator.",
+    "accountBlockedMessage": "This user account is disabled, please contact system administrator.",
+    "multipleActiveUsers": "This username is linked to multiple users, please contact system administrator.",
+    "pendingUserFailureMessage":"This user account is pending for approval, please contact system administrator."
+  },
+  "twoFactorAuth":{
+    "title":"Enter One Time Password (OTP)",
+    "subTitle":"Please enter the OTP send on your registered ",
+    "note1":"Didn't get OTP? Click on ",
+    "login":"Login",
+    "resendOTPLabel":"Resend OTP",
+    "otpBlankMessage" : "OTP can not be blank",
+    "verifyPassword" : "Verify",
+    "otpPlaceHolder" : "Enter your OTP",
+    "passwordPlaceHolder" : "Password",
+    "invalidOTP" : "Invalid OTP",
+    "invalidPassword" : "Invalid Password",
+    "emptyPassword" : "Password can not be empty",
+    "resentOTPMessage" : "OTP has been sent",
+    "twoFactorErrorHeader":"Notification",
+    "failedDependencyError":"We are unable to send an OTP to validate your credentials, please try after sometime with an option to get back",
+    "userContactNotFoundForTFAError":"We are unable to establish a way to validate two-factor authentication enabled on your account. Please contact your System Administrator.",
+    "mobileLabel":"mobile",
+    "emailLabel":"email",
+    "andLabel":"and"
+  },
+  "header": {
+    "selectLanguageLabel": "Select Language",
+    "toggleNavigationLabel": "Toggle Navigation",
+    "changePasswordLinkText": "Change Password",
+    "helpdeskLinkText": "Helpdesk",
+    "updateProfileLinkText": "Edit Profile",
+    "manageUsersLinkText": "Manage Users",
+    "manageUserGroupsLinkText": "Manage User Groups",
+    "logoutLinkText": "Logout",
+    "changeLanguageOptionText": "Change language",
+    "breakTheGlassLabel": "Break The Glass Mode",
+    "languageOption":{
+      "English": "English",
+      "French": "français",
+      "Arabic": "العربية"
+    },
+    "menuItems": {
+      "Dashboard": "Dashboard",
+      "Records": "Results",
+      "Patients": "Patients",
+      "My Records": "Results",
+      "System Settings": "System Settings",
+      "Linked Patient": "My Family",
+      "Dashboards": "Dashboards",
+      "Widgets": "Widgets",
+      "Documents": "Documents",
+      "Encounters": "History",
+      "Medications": "Medications",
+      "Conditions": "Conditions",
+      "Allergies": "Allergies",
+      "My Tasks": "My Tasks",
+      "XDS Errors": "XDS Errors",
+      "Tasks":"Tasks",
+      "Admin Manage Consent": "Manage Consent",
+      "Trigger Manager": "Trigger Manager",
+      "Vitals" : "Observations",
+      "Create User" : "Create Physician User",
+      "My Tasks For Ops Admin/Sales Group":"My Tasks",
+      "Patient Uploads":"Patient Uploads",
+      "Digitized Patient Uploads":"Digitized Patient Uploads",
+      "Bulk Upload": "Bulk Upload",
+      "Appointments": "Appointments",
+      "Questionnaires":"Questionnaires",
+      "Labs":"Labs",
+      "Bulk Upload": "Bulk Upload",
+      "Manage HCS":"Care Services ",
+      "QuestionBuilder":"Question Builder",
+      "PatientResponses":"Patient Responses",
+      "CreateQuestionnaire":"Create Questionnaire",
+      "About Us":"About us"
+    }
+  },
+  "footer": {
+    "poweredByText": "Powered by MphRx. All Rights Reserved"
+  },
+  "patients":{
+    "advanceSearch":{
+      "header":"Search Patients",
+      "patientNameLabel":"Name",
+      "patientIdLabel":"Patient ID",
+      "dobLabel":"Date of Birth",
+      "dobFromPlaceholder":"From/Exact",
+      "dobToPlaceholder":"To",
+      "genderLabel":"Gender",
+      "addressLabel":"Address",
+      "phoneLabel":"Phone",
+      "emailLabel":"Email",
+      "ageLabel":"Age",
+      "ageFromPlaceholder":"From/Exact",
+      "ageToPlaceholder":"To",
+      "patientLabel":"Patients",
+      "zipLabel":"Zip",
+      "searchButtonText":"Search",
+      "clearButtonText":"Reset",
+      "showPatientsLabel":"Show Patients",
+      "showOnlyMyPatientsLabel":"Only My Patients",
+      "showAllPatientsLabel":"All Patients",
+      "emailValidationError":"Invalid email",
+      "phoneValidationError":"Invalid number",
+      "ageValidationError":"Age should be in numbers",
+      "birthdateValidationError":"Incorrect date range. The From date should fall before the To Date.",
+      "ageRangeValidationError":"Incorrect age range. The From age should fall before the To age.",
+      "availablePatientView":{
+        "myPatientLabel":"My Patients",
+        "allPatientLabel":"All Patients"
+      },
+      "errorText":{
+        "dateNotValidText":"Invalid date."
+      },
+      "placeHolders": {
+        "patientName": "First or Last Name",
+        "patientId": "Type ID \"234235235\" etc.",
+        "dob": "Date of Birth"
+      }
+    },
+    "overview": {
+      "attentionNeededLabel": "Quick Links",
+      "orbisMeLabel": "OrbisMe",
+      "highRiskText": "High Risk",
+      "mostRecentConditionText": "Most Recent Condition",
+      "patientId": "Patient ID",
+      "lastVisitLabel": "Last Visit",
+      "phoneNumberLabel": "Phone Number",
+      "addressLabel": "Address",
+      "attendingDoctorLabel": "Doctor Name",
+      "attendingDoctorIDLabel": "Doctor ID",
+      "caseNumberLabel": "Case Number",
+      "insuranceLabel": "Insurance",
+      "bornLabel": "Born",
+      "genderLabel": "Gender",
+      "unavailableText": "Unavailable",
+      "gender": {
+        "M": "Male",
+        "F": "Female",
+        "U": "Undifferentiated",
+        "": "Unavailable",
+        "O": "Other"
+      },
+      "salutation": {
+        "M": "Mr.",
+        "F": "Ms.",
+        "U": " ",
+        "null": " "
+      },
+      "demographicsLabel": "Patient Demographics",
+      "orbisMeLinkText": "Orbis ME",
+      "caseInfo": {
+        "statusLabel": "Status",
+        "locationNameLabel": "Location",
+        "admissionDateLabel": "Admission Date",
+        "dischargeDateLabel": "Discharge Date",
+        "reasonLabel": "Reason",
+        "caseNumberLabel": "Case Number",
+        "lastVisitedDate": "Last Visited Date",
+        "attendingDoctor": "Attending Doctor",
+        "typeLabel": "Type",
+        "classLabel": "Class",
+        "typeValues": {
+          "accident": "Accident",
+          "Emergency": "Emergency",
+          "labor and delivery": "Labor and Delivery",
+          "routine": "Routine"
+        }
+      }
+    },
+    "list":{
+      "patientsLabel":"Recently Viewed Patients",
+      "patientSearchLabel":"Search Results",
+      "searchButtonText":"Search",
+      "searchByKeywordsPlaceholder":"Search Patients",
+      "idLabel":"ID",
+      "bornLabel":"Born",
+      "genderLabel":"Gender",
+      "deceasedLabel":"Deceased",
+      "noResultFoundText":"No results found.",
+      "loadingText":"Loading...",
+      "gender":{
+        "M":"Male",
+        "F":"Female",
+        "U":"Undifferentiated",
+        "":"Unavailable",
+        "O":"Other"
+      },
+      "patientDetailsLabel": "Patient Details",
+      "phoneOrEmailLabel": "Phone Number/Email",
+      "lastVisitedDateLabel": "Last Visited Date",
+      "actionsLabel": "Actions"
+    },
+    "showAllRecords": {
+      "header": "Results",
+      "searchByKeywordsPlaceholder": "Search",
+      "idLabel": "ID",
+      "bornLabel": "Born",
+      "genderLabel": "Gender",
+      "noResultFoundText": "No results found",
+      "loadingText": "Loading...",
+      "descriptionLabel": "Description",
+      "typeLabel": "Type",
+      "statusLabel": "Status",
+      "orderDateLabel": "Order Date",
+      "performingLocationLabel": "Performing Location",
+      "informationLabel": "Image/Report Available"
+    },
+    "attentionImages": {
+      "labText": "Labs",
+      "scanText": "Radiology",
+      "visitsText": "Visits",
+      "qaText": "Q&A",
+      "allRecordsText": "All records",
+      "overviewText": "Overview",
+      "requestAccessText": "Request access",
+      "requestedAccessText": "Access requested",
+      "approvedAccessText": "Access granted",
+      "breakTheGlassLabel":"Break The Glass",
+      "breakTheGlassAccessText":"BTG access granted"
+    },
+    "searchCriteria": {
+      "PatientId": "Patient ID",
+      "name": "Name",
+      "birthDate": "Patient DOB",
+      "gender": "Gender",
+      "keywordSearch": "Keyword",
+      "showAll": "Show Patients",
+      "authParams": "Show Patients",
+      "showPatients": {
+        "true": "All Patients",
+        "false": "Only My Patients",
+        "showAll": "All Patients"
+      },
+      "clearCriteriaButton": "Clear"
+    }
+  },
+  "localization":{
+    "selectLanguage":"Select Language",
+    "en":"English",
+    "fr":"français",
+    "ar": "العربية"
+  },
+  "appointments":{
+    "showBookAppointmentLinkInWithoutLogin":" Book an Appointment.",
+    "betweenLabel":"Between ",
+    "anyTimeLabel":"Any Time ",
+    "afterLabel":"After ",
+    "beforeLabel":"Before ",
+    "appointmentSuccessMsg":"Appointment has been saved successfully.",
+    "appointmentRescheduleMsg":"Appointment has been rescheduled successfully.",
+    "slotNotValidMsg":"The slot is not valid, kindly select another slot.",
+    "patientNotExistMsg":"The Patient is not registered, kindly contact the hospital administrator.",
+    "listing":{
+      "appointmentsLabel":"Appointments",
+      "upcomingAppointmentsLabel":"Upcoming Appointments",
+      "nextAppointmentsLabel":"Next Appointments",
+      "futureAppointmentsLabel":"Future Appointments",
+      "recentAppointmentsLabel":"Recent Appointments",
+      "newAppointmentsLabel":"New Appointments",
+      "rescheduleLabel":"Reschedule",
+      "instruction":"Instruction",
+      "instructionLabel":"Instruction",
+      "cancelLabel":"Cancel",
+      "cancelAppointmentLabel":"Cancel Appointment",
+      "cancellationReasonLabel":"Reason",
+      "selectLabel":"Select",
+      "yourCommentLabel":"Your Comment",
+      "submitLabel":"Submit",
+      "closeLabel":"Close",
+      "relationship":{
+        "Significant Other":"Other Relative",
+        "par":""
+      },
+      "status":{
+        "booked":"Booked",
+        "pending":"Pending",
+        "proposed":"Proposed",
+        "fulfilled":"Fulfilled",
+        "arrived":"Arrived",
+        "cancelled":"Cancelled",
+        "noshow":"No Show",
+        "rescheduled":"Rescheduled",
+        "Rescheduled":"Rescheduled",
+        "Booked":"Booked"
+      },
+      "selectOneReasonLabel":"Select one reason",
+      "selectReasonErrorText":"Please select one cancellation reason.",
+      "showAllLabel":"Show all",
+      "noPlanedAppointmentsText":"There are no planned scheduled appointment.",
+      "noCompletedAppointmentsText":"There are no completed appointment.",
+      "questionnaireIncompleteStatus":"Questionnaire incomplete.",
+      "questionnaireCompleteStatus":"Questionnaire completed.",
+      "showQuestionnaireResponseLable":"Show questionnaire response.",
+      "submitButtonText":"Submit",
+      "closeButtonText":"Cancel",
+      "proposedAppointmentMessage":"If an appointment is not visible or is reschedule or if cancel option is unavailable for an appointment, please contact the hospital administrator.",
+      "toLabel":"to"
+    },
+    "requestable":{
+      "showRequestAppointment":"Request Appointment",
+      "hideRequestAppointment":"Request Appointment"
+    },
+    "appointmentDetails":{
+      "appointmentDetailsLabel":"Appointment Details",
+      "printLabel":"Print",
+      "appointmentDateAndTimeLabel":"Appointment Date & Time",
+      "testDetails":"Test Details",
+      "physicianDetails":"Physician Details",
+      "serviceDetails":"Service Details",
+      "durationLabel":"Duration",
+      "testDetailsLabel":"Test Details",
+      "toText":"to",
+      "instructionsLabel":"Instructions",
+      "instructionCommentsText":"There are some instructions which you need to follow prior to your appointment.",
+      "noInstructionText":"There are no instructions.",
+      "questionnaireRequiredLabel":"Questionnaire Required",
+      "fillQuestionnaireText":" Please fill up the following questionnaire",
+      "filledQuestionnaireText":"Show your filled questionnaire response and uploaded documents.",
+      "questionnaireIncompleteStatus":"Questionnaire Incomplete.",
+      "appointmentHistoryLabel":"Booking History",
+      "byLabel":"By",
+      "onLabel":"On",
+      "reasonLabel":"Reason",
+      "commentLabel":"Comment",
+      "specialtyDetailsLabel":"Speciality Details",
+      "practitionerDetailsLabel":"Physician Details",
+      "noQuestionnaireRequiredText":"No questionnaire is required for this appointment.",
+      "cancelLabel":"Cancel",
+      "uploadedDocumentsLabel":"Uploaded Documents",
+      "proposedDateAndTimeLabel":"Proposed Date and Time",
+      "betweenLabel":"Between",
+      "toLabel":"To",
+      "selectReasonLabel":"Select Reason",
+      "noUploadedDocumentsText":"There are no uploaded documents.",
+      "fileNameLabel":" File Name",
+      "studyIuidLabel":"StudyIUID",
+      "patientNameLabel":"Patient Name",
+      "idLabel":"ID:",
+      "draftLabel":"Draft"
+
+    },
+    "appointmentBook":{
+      "bookAppointmentLabel":"Book Appointment",
+      "rescheduleAppointmentLabel":"Reschedule Appointment",
+      "forLabel":"For",
+      "relationLabel":"Relationship",
+      "selfLabel":"Self",
+      "stepsLabel":"Steps",
+      "selectPatientLabel":"Select Patient",
+      "searchServiceLabel":"Search Service",
+      "selectSlotLabel":"Select Slot",
+      "confirmDetailsLabel":"Confirm Details",
+      "appLoginTitle":"Booking Info",
+      "appLoginText1":" To proceed further, please",
+      "signUp":"Sign Up",
+      "appLoginText2a":"If you are an existing user, please",
+      "signIn":"Sign In",
+      "appLoginText2b":"and you will be redirected to the Select Patient page.",
+      "ok":"Ok",
+      "cancel":"Cancel"
+
+    },
+    "selectPatient":{
+      "nameLabel":"Name",
+      "patientDetailsLabel":"Patient Details",
+      "appointmentForLabel":"Appointment for",
+      "selfLabel":"Self",
+      "linkedPatientLabel":"Family Member",
+      "genderLabel":"Gender",
+      "emailLabel":"Email",
+      "contactNumberLabel":"Contact Number",
+      "blankContactText":"Recipient contact can't be blank.",
+      "invalidContactText":"Invalid recipient contact number.",
+      "nextLabel":"Next"
+    },
+    "selectAppointment":{
+      "searchForLabel":"Search For",
+      "fineServicesLabel":"Find Services",
+      "orLabel":"or",
+      "findPhysicianLabel":"Find Physician",
+      "selectPhysicianLabel":"Please select the service provided by the selected physician.",
+      "selectServiceLabel":"Select Service Type",
+      "enterPhysicianNamePlaceholderLabel":"Please enter the first three characters of the physician name.",
+      "findMedicalSpecialtyLabel":"Find Speciality",
+      "backLabel":"Back",
+      "nextLabel":"Next",
+      "instructionLabel":"Instructions",
+      "selectServiceText":"Please enter first three characters of the service like CBC.",
+      "selectSpecialtyText":"Please enter the first three characters of the specialty name.",
+      "enterServiceText":"Please enter first three characters of the service like CBC",
+      "enterSpecialtyText":"Please enter the first three characters of the Specialty name"
+    },
+    "slot":{
+      "selectSlotLabel":"Select a slot from desired location.",
+      "showLabel":"Show",
+      "hideLabel":"Hide",
+      "timeSlotLabel":"Time Slot",
+      "previousLabel":"Previous Day",
+      "nextDaysLabel":"Next Day",
+      "nextLabel":"Next",
+      "shoeAllSlotsLabel":"Show all slots",
+      "morningText":"Morning",
+      "afternoonText":"Afternoon",
+      "eveningText":"Evening",
+      "noSlotLabel":"No Slots Available",
+      "showAllSlotsLabel":"Show All Slots",
+      "minimizeSlotsLabel":"Minimize Slots",
+      "preferredDateLabel":"Preferred Date",
+      "fromLabel":"From",
+      "toLabel":"To",
+      "preferredTimeLabel":"Preferred Time",
+      "preferredDayLabel":"Preferred Day",
+      "enterStartDateLabel":"Enter the Start Date",
+      "enterEndDateLabel":"Enter the End Date",
+      "NumberOfSlotsLabel":" Slots"
+    },
+    "appointmentListAll":{
+      "searchRecordsLabel":"Search Records"  ,
+      "appointmentDateLabel":"Appointment Date",
+      "patientNameLabel":"Patient Name",
+      "selectPatientLabel":"Select Patient",
+      "appointmentStatusLabel":"Appointment Status",
+      "allLabel":"All",
+      "searchLabel":"Search",
+      "resetLabel":"Reset",
+      "allAppointmentLabel":"All Appointments",
+      "newAppointmentsLabel":"New Appointments",
+      "noAppointmentsText":"There are no appointments.",
+      "allAppointmentsLabel":"All Appointments",
+      "upcomingAppointmentsLabel":"Upcoming Appointments",
+      "recentAppointmentsLabel":"Recent Appointments"
+    },
+    "appointmentPatientBanner":{
+      "patientDetailsLabel":"Patient Details",
+      "relationLabel":"Relationship",
+      "selfLabel":"Self",
+      "contactLabel":"Contact",
+      "emailLabel":"Email"
+    },
+    "confirmAppointment":{
+      "appointmentDateAndTimeLabel":"Appointment Date & Time",
+      "durationLabel":"Duration",
+      "selectLabel":"Select",
+      "bookingLabel":"Booking",
+      "rescheduleLabel":"Reschedule",
+      "selectReasonCodeLabel":"Select Reason",
+      "selectReasonCode":"Select Reason Code",
+      "cancelLabel":"Cancel",
+      "confirmLabel":"Confirm",
+      "proposedDateAndTimeLabel":"Proposed Date and Time",
+      "toLabel":"To",
+      "commentsLabel":"Your Comments",
+      "selectText":"Select"
+    },
+    "appointmentPDFTemplate":{
+      "appointmentDetails":"Appointment Details",
+      "appointmentDateAndTimeLabel":"Appointment Date & Time",
+      "testDetailsLabel":"Test Details",
+      "specialtyDetailsLabel":"Speciality Details",
+      "practitionerDetailsLabel":"Physician Details",
+      "patientDetailsLabel":"Patient Details",
+      "bornLabel":"Born",
+      "relationshipLabel":"Relationship",
+      "contactLabel":"Contact",
+      "emailLabel":"Email",
+      "instructionsLabel":"Instructions",
+      "instructionCommentsText":"There are some instructions which you need to follow prior to your appointment.",
+      "noInstructionText":"There are no instructions."
+
+    },
+    "cancellation":{
+      "successMsg":"Appointment Cancelled Successfully.",
+      "errorMsg":"Appointment Cancellation Failed."
+    },
+    "hcs":{
+      "hcsDetails":{
+        "createHeading":"Create Care Service",
+        "editHeading":{
+          "practitioner":"Edit Physician Care Service",
+          "test":"Edit Test Care Service",
+          "specialty":"Edit Speciality Care Service",
+          "default":"Edit Default Care Service"
+        },
+        "serviceCategory":{
+          "practitioner":"Add Physician Care Service",
+          "test":"Add Test Care Service",
+          "specialty":"Add Speciality Care Service",
+          "default": "Add Default Care Service"
+        },
+        "serviceCategoryHeading":{
+          "practitioner":"Enter details required to create physician care service.",
+          "test":"Enter details required to create test care service.",
+          "specialty":"Enter details required to create speciality care service.",
+          "default":"Enter details required to create default care service."
+        },
+        "hcsFormElement":{
+          "identifierLabel":"Identifier",
+          "serviceNameLabel":"Service Name",
+          "organizationTypeLabel":"Department Type",
+          "organizationNameLabel":"Department Name",
+          "testCompendiumNameLabel":"Test Compendium Name",
+          "specialtyNameLabel":"Specialty Name",
+          "serviceNameLabel":"Service  Name",
+          "organizationTypePlaceholder":"Enter Department type",
+          "organizationNamePlaceholder":"Enter Department Name",
+          "fillOrganizationDetailsMessage":"Please fill the organization details.",
+          "fillSpecialtyDetailsMessage":"Please fill the specialty details.",
+          "fillTestDetailsMessage":"Please fill the test details.",
+          "testCompendiumNamePlaceholder":"Enter Test Name",
+          "specialtyPlaceholder":"Enter Specialty",
+          "servicePlaceholder":"Enter Service",
+          "saveLabel":"Save",
+          "cancelLabel":"Cancel",
+          "identifierPaceholder":"Enter Identifier",
+          "enterServiceNamePlaceholder":"Enter Service Name",
+          "physicianNameLabel":"Physician Name",
+          "physicianNamePlaceholder":"Please enter the first three characters of the Physician name.",
+          "serviceOfferedLabel":"Service Offered",
+          "serviceOfferedPlaceholder":"Select Service",
+          "locationLabel":"Location",
+          "departmentLabel":"Department",
+          "locationPlaceholder":"Select Location",
+          "addDepartmentLabel":"Add Department",
+          "addSpecialtyLabel":"Add Specialty",
+          "addServiceOfferedLabel":"Add Test Services",
+          "departmentPlaceholder":"Select Department",
+          "addTestCompendiumLabel":"Add Test",
+
+          "testLabel":"Test Name",
+          "testPlaceholder":"Please enter the first three characters of the Test name.",
+          "specialityLabel":"Specialty",
+          "specialityPlaceholder":"Please enter the first three characters of the Specialty name.",
+          "dayTimeLabel":"Available Day & Time",
+          "daysLabel":"Days",
+          "startTimeLabel":"Start Time",
+          "endTimeLabel":"End Time",
+          "providedByLabel":"Provided By",
+          "providedByPlaceholder":"Enter Organization name",
+          "requestableRoleLabel":"Roles Required for Requesting an Appointment",
+          "bookableRoleLabel":"Roles Required for Booking an Appointment",
+          "questionnaireLabel":"Questionnaire",
+          "questionnairePlaceholder":"Please enter the first three characters of the Questionnaire name.",
+          "questionnaireSpecialityLabel":"Speciality",
+          "questionnaireDescriptionLabel":"Description",
+          "instructionsLabel":"Instructions",
+          "instructionsPlaceholder":"Give instruction",
+          "aboutServicesLabel":"About Services",
+          "aboutServicesPlaceholder":"Enter service description.",
+          "notAvailableReasonLabel":"Non-Availability Reason",
+          "notAvailableReasonPlaceholder":"Enter reason for non-availability.",
+          "saveLabel":"Save",
+          "updateLabel":"Update",
+          "cancelLabel":"Cancel",
+          "identifierErrorMsg":"Identifier already exist.",
+          "identifierEmptyMsg":"Identifier can't empty.",
+          "EmptyNameMsg":"Name can't empty.",
+          "serviceErrMsg":"Service already exist.",
+          "specialtyErrMsg":"Specialty already exist.",
+          "phyErrorMsg":"Select physician.",
+          "serviceTypeForPhyErrorMsg":"Select sevice offered by physician.",
+          "testErrorMsg":"Select a test.",
+          "serviceNameErrorMsg":"Enter service name.",
+          "serviceTypeErrorMsg":"Select a speciality.",
+          "organizationErrorMsg":"Organization already exist.",
+          "successHcsMessage":"Hcs successfully created/edited.",
+          "errorHcsMessage":"Problem in creating/editing hcs, Please try after sometime.",
+          "requestableErrorMsg":"Already exists in bookable role.",
+          "bookableErrorMsg":"Already exists in requestable role.",
+          "rolesErrorMsg":"None of the roles have been selected. Do you want to continue?",
+          "startTimeErrorMsg":"Start time should be less than End time.",
+          "endTimeErrorMsg":"End time should be greater than Start time.",
+          "invalidTimeErrorMsg":"Please enter a valid time.",
+          "specialtyFillDetailsMessage":"Please fill the specialty details.",
+          "organizationFillDetailsMessage":"Please fill the department details.",
+          "servicesOfferedFillDetailsMessage":"Please fill the services offered details."
+        }
+      },
+      "hcsListing":{
+        "heading":"Care Services",
+        "changeStatusSuccess":"Status successfully changed.",
+        "changeStatusError":"Problem in changing status.",
+        "createNewLabel":"Create",
+        "allServicesLabel":"All Services",
+        "physicianLabel":"Physicians",
+        "servicesLabel":"Test Services",
+        "specialityLabel":"Specialities",
+        "defaultServicesLabel":"Default Services",
+        "identifierLabel":"Identifier",
+        "detailsLabel":"Details",
+        "serviceLabel":"Service",
+        "categoryLabel":"Type",
+        "locationLabel":"Location",
+        "organizationLabel":"Department",
+        "statusLabel":"Status",
+        "noResultFoundText":"No results found.",
+        "loadingText":"Loading...",
+        "servicesTypes":{
+          "default":"Default",
+          "test":"Test",
+          "practitioner":"Physician",
+          "specialty":"Specialty"
+        }
+      }
+    },
+    "weekDays":{
+      "sunday":"Sun",
+      "monday":"Mon",
+      "tuesday":"Tue",
+      "wednesday":"Wed",
+      "thursday":"Thu",
+      "friday":"Fri",
+      "saturday":"Sat"
+    },
+    "booking":{
+      "successMsg":"Appointment has been booked successfully."
+    },
+    "reschedule":{
+      "successMsg":"Appointment has been rescheduled successfully."
+    },
+    "tabSwitchError":{
+      "serviceMsg":"Select service first then go to next step." ,
+      "slotMsg":"Select slot first then go to next step."
+    },
+    "slotsText":{
+      "todayText":"Today",
+      "tomorrowText":"Tomorrow"
+    },
+    "hl7message":{
+      "actionComment":"Appointment created by scheduling system."
+    },
+    "slotAlreadyBooked":{
+      "modalHeading":"Book New Appointment.",
+      "errorMsg":"We are sorry the selected time slot is not available. ",
+      "reSelectLabel":"Reselect",
+      "cancelLabel":"Cancel"
+    }
+
+  },
+  "records": {
+    "chartDateLabel":"Date",
+    "sharing": {
+      "header": "Share Record",
+      "patientDetailsLabel": "Patient Details",
+      "internalRecipientsLabel": "Internal Recipients",
+      "externalRecipientsLabel": "External Recipients",
+      "pinLabel": "Pin(6 digits)",
+      "validTillLabel": "Valid For",
+      "addMessageLabel": "Message",
+      "patientIdLabel": "Patient ID",
+      "accessionIdLabel": "Accession ID",
+      "genderLabel": "Gender",
+      "shareButtonText": "Share",
+      "clearButtonText": "Clear All",
+      "daysText": "Days",
+      "errorText": {
+        "blankEmailText": "Recipient Email can't be blank.",
+        "invalidEmailText": "Invalid recipient email address.",
+        "blankPinText": "Pin can't be blank.",
+        "blankValidTiiText": "Validity can't be blank.",
+        "noOfDigitsErrorText": "Should be a 6 digits numeric pin."
+      },
+      "successMessage": "Record has been shared successfully."
+    },
+    "advanceSearch": {
+      "header": "Advanced Search",
+      "patientLabel": "Patient",
+      "patientNameLabel": "Patient Name",
+      "patientIdLabel": "Patient ID",
+      "dobLabel": "Date of Birth ({{viewDateFormat.toUpperCase()}})",
+      "genderLabel": "Gender",
+      "genderSelectOption": "Please Select",
+      "recordLabel": "Result",
+      "orderNameLabel": "Order Name",
+      "orderIdLabel": "Order ID",
+      "orderDateFromLabel": "Order Date From",
+      "orderDateToLabel": "Order Date To",
+      "accessionNumberLabel": "Accession Number",
+      "statusLabel": "Status",
+      "selectStatusOption": "Please Select",
+      "partialStatusText": "Partial",
+      "finalStatusText": "Final",
+      "ProvisionalStatusText":"Provisional",
+      "RequestedStatusText":"Requested",
+      "modalityLabel": "Modality",
+      "selectModalityOption": "Please Select",
+      "recordTypeLabel": "Type",
+      "allRecordsText": "All",
+      "radOnlyText": "Radiology",
+      "labOnlyText": "Lab",
+      "genderMale": "Male",
+      "genderFemale": "Female",
+      "searchButtonText": "Search",
+      "clearButtonText": "Clear All",
+      "orderingPhysicianLabel": "Ordering Physician",
+      "performingLocationLabel": "Performing Location",
+      "uploadedBy":"Uploaded By",
+      "uploadedFromLabel":"Uploaded from bulkUploader.",
+      "errorText": {
+        "dateNotValidText": "Not a valid date.",
+        "rangeNotValidText": "The From Date should fall before the To Date."
+      },
+      "gender": {
+        "M": "Male",
+        "F": "Female",
+        "U": "Undifferentiated",
+        "O": "Others"
+      },
+      "modality": {
+        "AR": "AR",
+        "BMD": "BMD",
+        "BDUS": "BDUS",
+        "EPS": "EPS",
+        "CR": "CR",
+        "CT": "CT",
+        "DX": "DX",
+        "ECG": "ECG",
+        "ES": "ES",
+        "XC": "XC",
+        "GM": "GM",
+        "HD": "HD",
+        "IO": "IO",
+        "IVOCT": "IVOCT",
+        "IVUS": "IVUS",
+        "KER": "KER",
+        "LEN": "LEN",
+        "MR": "MR",
+        "MG": "MG",
+        "NM": "NM",
+        "OAM": "OAM",
+        "OCT": "OCT",
+        "OPM": "OPM",
+        "OP": "OP",
+        "OPR": "OPR",
+        "OPT": "OPT",
+        "OPV": "OPV",
+        "OSS": "OSS",
+        "PX": "PX",
+        "PT": "PT",
+        "RF": "RF",
+        "RG": "RG",
+        "SM": "SM",
+        "SRF": "SRF",
+        "US": "US",
+        "VA": "VA",
+        "XA": "XA"
+      },
+      "recordType": {
+        "Radiology": "Radiology",
+        "Lab": "Lab"
+      },
+      "status": {
+        "Partial": "Partial",
+        "Final": "Final",
+        "Provisional": "Provisional",
+        "Requested": "Requested"
+      },
+      "placeHolders": {
+        "patientName": "First or Last Name",
+        "patientId": "MRN",
+        "dob": "Date of Birth",
+        "orderName": "Order Name",
+        "orderId": "Order ID",
+        "orderingPhysician": "Physician Name",
+        "performingLocation": "Location Name",
+        "uploadedBy":"Uploaded By"
+
+      }
+    },
+    "overview": {
+      "uploadPatientDocuments":"Upload Documents",
+      "bornLabel": "Born",
+      "deceasedLabel": "Deceased",
+      "genderLabel": "Gender",
+      "patientIdLabel": "Patient ID",
+      "orderNoLabel": "Order No",
+      "showAllRecordsButtonText": "Show All Results",
+      "downloadReportButtonText": "Download Report",
+      "downloadImagesButtonText": "Download Images",
+      "actionsButtonText": "Actions",
+      "printReportButtonText": "Print Report",
+      "shareRecordButtonText": "Share Result",
+      "downloadImageButtonText": "Download Images",
+      "dicomButtonText": "DICOM Study",
+      "jpegButtonText": "JPEG Files",
+      "referringPhysicianLabel": "Referring Physician",
+      "reportStatusLabel": "Report Status",
+      "performingLocationLabel": "Performing Location",
+      "orderDateLabel": "Order Date/Time",
+      "reportsLabel": "Reports",
+      "imagesLabel": "Images",
+      "openViewerButtonText": "Open in Image Viewer",
+      "downloadButtonText": "Download DICOMS",
+      "labReportLabel": "Lab Report",
+      "reasonForStudyLabel": "Reason for Study",
+      "investigationsLabel": "Investigations",
+      "resultsLabel": "Results",
+      "unitsLabel": "Units",
+      "intervalLabel": "Ref Interval",
+      "statusLabel": "Status",
+      "status": {
+        "P": "Partial",
+        "IP": "Partial",
+        "F": "Final",
+        "C": "Corrected",
+        "X": "Cancelled",
+        "CD:26": "Cancelled",
+        "CA": "Cancelled"
+      },
+      "defaultStatus": "Pending",
+      "interpretationLabel": "Interpretation",
+      "actionsLabel": "Trend",
+      "reportResultLable": {
+        "rpObservation": "View Document",
+        "edObservation": "View {{observation.extension[0].value[0].contentSubType| uppercase}}"
+      },
+      "confirmMessage": "The result is available as a PDF or TIFF file that will need to be viewed on your computer. If you are on a public or shared computer, we do not recommend that you continue with this action.<br/> For protecting patient information, please clear your browser and delete any files downloaded to this computer in the session.",
+      "confirmBase64Message": "The result is available as a file that will need to be viewed on your computer. If you are on a public or shared computer, we do not recommend that you continue with this action.<br/> For protecting patient information, please clear your browser and delete any files downloaded to this computer in the session.",
+      "canNotBeDownload": "This result cannot be shown at this time.",
+      "fileNotFoundError": "File not found.",
+      "inaccessibleContent": "Inaccessible content.",
+      "diedDateLable": "Died",
+      "diedAgeLable": "Age at Death",
+      "graphErrorMessage":"There was an error displaying the chart.",
+      "downloadReportErrorMessage":"There was an error in downloading the report.",
+      "showText":"Show",
+      "hideText":"Hide",
+      "trendText":"Trend",
+      "gender": {
+        "M": "Male",
+        "F": "Female",
+        "U": "Undifferentiated",
+        "": "Unavailable",
+        "O": "Other"
+      },
+      "thumbnail": {
+        "description": "{{series.description?series.description: 'No Description'}}",
+        "noOFImages": "{{series.numberOfInstances.value}} Images"
+      },
+      "versions": {
+        "header": "Versions",
+        "dateChanged": "Date Changed",
+        "previousValue": "Previous Value",
+        "previousUnits": "Previous Units",
+        "previousStatus": "Previous Status",
+        "valueAttachmentVersionText": "Please contact your Lab System"
+      },
+      "interpretations": {
+        "XXXX":"XXXX",
+        "Below low normal": "Below Normal",
+        "Above high normal": "Above Normal",
+        "Below lower panic limits ": "Below lower panic limits",
+        "Above upper panic limits ": "Above upper panic limits",
+        "Below lower panic limits": "Below lower panic limits",
+        "Above upper panic limits": "Above upper panic limits",
+        "Below absolute low-off instrument scale": "Below absolute low-off instrument scale",
+        "Above absolute high-off instrument scale": "Above absolute high-off instrument scale",
+        "Normal": "Normal",
+        "Normal (applies to non-numeric results)":"Normal",
+        "Abnormal (applies to non-numeric results)":"Abnormal",
+        "Very abnormal (applies to non-numeric units, analogous to panic limits for numeric units)":"Very Normal",
+        "Abnormal": "Abnormal",
+        "Very abnormal": "Very abnormal",
+        "No range defined, or normal ranges don't apply": "No range defined",
+        "Significant change up": "Significant change up ",
+        "Significant change down": "Significant change down",
+        "Better--use when direction not relevant": "Better--use when direction not relevant.",
+        "Worse--use when direction not relevant": "Worse--use when direction not relevant.",
+        "Susceptible. Indicates for microbiology susceptibilities only": "Susceptible. Indicates for microbiology susceptibilities only.",
+        "Resistant. Indicates for microbiology susceptibilities only": "Resistant. Indicates for microbiology susceptibilities only. ",
+        "Intermediate. Indicates for microbiology susceptibilities only": "Intermediate. Indicates for microbiology susceptibilities only.",
+        "Moderately susceptible. Indicates for microbiology susceptibilities only.": "Moderately susceptible. Indicates for microbiology .susceptibilities only.",
+        "Very susceptible. Indicates for microbiology susceptibilities only.": "Very susceptible. Indicates for microbiology susceptibilities only."
+      },
+      "trendChart":{
+        "dateLabel":"Date"
+      },
+      "delayedReportText":"The final report is received and will be available post your physician's review."
+    },
+    "list": {
+      "recordsLabel": "Results",
+      "searchButtonText": "Search",
+      "patientLinkingLinkText": "Did not find your records?",
+      "uploadButtonText": "Upload",
+      "searchByKeywordsPlaceholder": "Search",
+      "idLabel": "ID",
+      "bornLabel": "Born",
+      "genderLabel": "Gender",
+      "noResultFoundText": "No results found.",
+      "noParameterFoundText":"No parameter found.",
+      "loadingText": "Loading",
+      "alertText": "One or more values are out of reference range.",
+      "atAGlanceText": "At a glance",
+      "interpretationText": "Interpretation",
+      "unitsText": "Units",
+      "levelsText": "Levels",
+      "rangeText": "Range",
+      "gender": {
+        "M": "Male",
+        "F": "Female",
+        "U": "Undifferentiated",
+        "": "Unavailable",
+        "O": "Other"
+      },
+      "lastViewedDate":"Last viewed on : "
+    },
+    "searchCriteria": {
+      "keywordSearch": "Keyword",
+      "patientId": "Patient ID",
+      "patientName": "Patient Name",
+      "patientDob": "Patient DOB",
+      "gender": "Gender",
+      "orderName": "Order Name",
+      "accessionNo": "Accession Number",
+      "orderId": "Order ID",
+      "orderNo": "Order Number",
+      "category": "Record Type",
+      "orderDateTo": "Date To",
+      "orderDateFrom": "Date From",
+      "status": "Status",
+      "modality": "Modality",
+      "orderingPhysician": "Ordering Physician",
+      "performingLocationId": "Performing Location",
+      "performingLocation": "Performing Location",
+      "clearCriteriaButton": "Clear",
+      "encounter": "Encounter"
+    }
+  },
+  "passwordStrengthErrorMsg": "This password is not strong enough.",
+  "changePassword": {
+    "header": "Change Password",
+    "popMessage": "Use at least 8 characters with combination of characters, special character, and symbols. Don’t use a password from another site, or something too obvious like your pet’s name",
+    "confirmPassword": {
+      "placeholderText": "Confirm Password",
+      "blankErrorText": "Confirm password field can't be blank.",
+      "matchingErrorText": "New password and confirm password should be same."
+    },
+    "newPassword": {
+      "placeholderText": "New Password",
+      "blankErrorText": "New password can't be blank."
+    },
+    "oldPassword": {
+      "placeholderText": "Old Password",
+      "blankErrorText": "Old password can't be blank."
+    },
+    "submit": {
+      "buttonText": "Change Password"
+    },
+    "errorText": {
+      "UV07": "Invalid old password.",
+      "UV09": "New password can not be same as old password."
+    },
+    "strengthLabelText":"Strength"
+  },
+  "forgotPassword": {
+    "header": "Forgot Password",
+    "username": {
+      "placeHolderText": "Username",
+      "blankErrorText": "Username can't be blank."
+    },
+    "submit": {
+      "buttonText": "Proceed"
+    },
+    "successMessage": "Please check your mail to proceed.",
+    "errorText": {
+      "UV06": "User not found with this username.",
+      "460": "Email don't exist for this username.",
+      "LU405": " You are not permitted to request password change from here. Please contact System Admininstrator"
+    },
+    "cancel": {
+      "buttonText": "Cancel"
+    },
+    "resetLinkSentText":"Please check your email for link to reset your password."
+  }, "resetPassword": {
+  "header": "Reset Password",
+  "popMessage": "Use at least 8 characters with combination of characters, special character and symbols. Don’t use a password from another site, or something too obvious like your pet’s name",
+  "newPassword": {
+    "placeHolderText": "New Password",
+    "blankErrorText": "Password can't be blank."
+  },
+  "confirmPassword": {
+    "placeHolderText": "Confirm Password",
+    "blankErrorText": "Password can't be blank."
+  },
+  "submit": {
+    "buttonText": "Change Password"
+  },
+  "successMessage": "Your password has been changed.",
+  "errorText": {
+    "UV08": "This link has expired, click on forgot password to generate a new link.",
+    "UV09": "The verification code you entered is invalid."
+  },
+  "strengthLabelText":"Strength",
+  "successMessageWeb": "Its done! You can now Sign In with your new password.",
+  "successMessageMobile1": "Its done! You can now",
+  "successMessageMobile2": "Sign In",
+  "successMessageMobile3": "with your new password."
+},
+  "users": {
+    "list": {
+      "usersLabel": "Users",
+      "createUserButtonText": "Create New User",
+      "searchButtonText": "Search",
+      "SearchLabel": "Search",
+      "searchByKeywordsPlaceholder": "Search by name, username, email or phone.",
+      "emailLabel": "Email",
+      "usernameLabel": "Username",
+      "phoneLabel": "Phone",
+      "StatusLabel": "Status",
+      "StatusSelectPlaceholder": "Select",
+      "UserTypeLabel": "User Type",
+      "UserTypeSelectPlaceholder": "Select",
+      "SearchBtnLabel": "Search",
+      "ResetBtnLabel": "Reset",
+      "noResultFoundText": "No users found.",
+      "loadingText": "Loading...",
+      "tableHeader": {
+        "username": "Name (Username)",
+        "email": "Email",
+        "phone": "Phone",
+        "userType": "Type",
+        "status": "Status"
+      },
+      "userTypeText":{
+        "Admin":"Admin",
+        "Clinical":"Clinical",
+        "Guest":"Guest",
+        "OpsAdmin":"OpsAdmin",
+        "Patient":"Patient",
+        "SalesGroup":"SalesGroup"
+      }
+    },
+    "editUser": {
+      "successOnSubmitMessage": "Saved changes for user record.",
+      "errorOnSubmitMessage": "Some fields contain bad data.",
+      "unexpectedError": "An unexpected error has occurred.",
+      "resetPassword.email.sent": "An email has been sent to the user with a link to set their password.",
+      "ActiveStatus": "Active",
+      "InactiveStatus": "Inactive",
+      "CreateNewUserLabel": "Create New User",
+      "EditUserLabel": "Edit User",
+      "UserTypeLabel": "User Type",
+      "UserTypeSelectPlaceholder": "Select",
+      "StatusLabel": "Status",
+      "UsernameLabel": "Username",
+      "UsernameErrorMsg": "Username already exists.",
+      "PasswordLabel": "Password",
+      "LinkedPractitionerLabel": "Link Practitioner",
+      "LinkedPatientLabel": "Link Patient",
+      "uiSelectMessageText": "There are {{value}} results more. Please refine your search.",
+      "LinkPPSelectPlaceholder": "Search",
+      "UniqueIDLabel": "Unique ID",
+      "nameLabel": "Name",
+      "firstNamePlaceholder": "First",
+      "lastNamePlaceholder": "Last",
+      "EmailLabel": "Email",
+      "PhoneLabel": "Phone",
+      "GenderLabel": "Gender",
+      "GenderSelectPlaceholder": "Select",
+      "BirthDateLabel": "Date of Birth",
+      "UserGroupsLabel": "User Groups",
+      "UserGroupsSelectPlaceholder": "Select",
+      "SaveBtnLabel": "Save",
+      "CancelBtnLabel": "Cancel",
+      "DisableBtnLabel": "Disable",
+      "EnableBtnLabel": "Enable",
+      "ResetPasswordLabel": "Reset Password",
+      "userType.cannot.be.empty": "User type is mandatory",
+      "customUserType.invalidAssignmentError": "PhysicianInternal and PhysicianExternal groups can not be assigned together.",
+      "username.cannot.be.empty": "Username is mandatory.",
+      "phone.cannot.be.empty": "Phone Number can't be empty.",
+      "phone.should.be.unique": "Phone Number should be unique.",
+      "password.cannot.be.empty": "Password is mandatory.",
+      "firstName.cannot.be.empty": "First name is mandatory.",
+      "email.cannot.be.empty": "Email can't be empty.",
+      "phone.should.be.valid": "Please enter a numeric phone number.",
+      "username.already.exists": "This username already exists.",
+      "email.should.be.valid": "Please enter a valid email address.",
+      "email.already.exists": "This email address is already linked to another user.",
+      "practitionerSelect.alreadyMapped": "This Practitioner is already linked - ",
+      "patientSelect.alreadyMapped": "This Patient is already linked - ",
+      "genderList": {
+        "Male": "Male",
+        "Female": "Female",
+        "Others": "Others"
+      },
+      "userAlreadyExists":"User already exists with the same phone number and user type.",
+      "configurableAccessFieldLabel" :"ConfigurableAccess"
+    }
+  },
+  "userGroups": {
+    "list": {
+      "userGroupLabel": "User Groups",
+      "createUserGroupButtonText": "Create User Group",
+      "SearchLabel": "Search",
+      "searchByKeywordsPlaceholder": "Search",
+      "SearchBtnText": "Search",
+      "ResetBtnText": "Reset",
+      "noResultFoundText": "No results found",
+      "loadingText": "Loading...",
+      "tableHeader": {
+        "userGroupName": "Name",
+        "description": "Description",
+        "userGroupType": "User Group Type"
+      }
+    },
+    "editUserGroup": {
+      "CreateNewUserGroupLabel": "Create New User Group",
+      "EditUserGroupLabel": "Edit User Group",
+      "NameLabel": "Name",
+      "DescriptionLabel": "Description",
+      "RolesLabel": "Roles",
+      "MenuItemsLabel": "Menu Items",
+      "SaveBtnLabel": "Save",
+      "CancelBtnLabel": "Cancel",
+      "AuthoritySelectPlaceholder": "Select",
+      "MenuItemSelectPlaceholder": "Select",
+      "userGroupName.already.exists": "User group name already exists.",
+      "userGroupName.cannot.be.empty": "User group name can't be empty.",
+      "successOnSubmitMessage": "User group has been saved.",
+      "errorOnSubmitMessage": "Some fields contain bad data."
+    }
+  },
+
+  "adminSettings": {
+    "list": {
+      "headLabel": "User/Physician Management",
+      "UserNGroupHeaderText": "User & User-Group Settings",
+      "manageUsersLinkText": "Manage Users",
+      "manageUserGroupsLinkText": "Manage User Groups",
+      "managePhysicianLinkText": "Manage Physicians",
+      "configManager": "Manage Application Configuration",
+      "xdsErrorLog": "XDS Errors",
+      "careGroups": "Care Groups",
+      "testCompendium":"Manage Test Compendium"
+    }
+  },
+  "unavailableText": "Unavailable",
+  "dashUnavailableText": "-",
+  "OrganizationNameUnavailable": "Name Unavailable",
+  "OrganizationAddressUnavailable": "Address Unavailable",
+  "passwordStrength": "strength",
+  "moreText": "More",
+  "lessText": "Less",
+  "datePicker": {
+    "month.cannot.be.empty": "Please select a month.",
+    "day.cannot.be.empty": "You must enter a date.",
+    "year.cannot.be.empty": "You must enter a year.",
+    "use.valid.year": "Please enter a valid value for year.",
+    "use.valid.day": "Please enter a valid value for day.",
+    "months": {
+      "None": "None",
+      "January": "January",
+      "February": "February",
+      "March": "March",
+      "April": "April",
+      "May": "May",
+      "June": "June",
+      "July": "July",
+      "August": "August",
+      "September": "September",
+      "October": "October",
+      "November": "November",
+      "December": "December"
+    },
+    "monthSelectPlaceholder": "Month",
+    "dayPlaceholder": "Day",
+    "yearPlaceholder": "Year"
+  },
+  "sharing": {
+    "login": {
+      "header": "Login",
+      "pinLabel": "Pin",
+      "pinPlaceholder": "Enter your pin to proceed.",
+      "errorText": {
+        "blankPinError": "You can't leave this field empty.",
+        "invalidPinError":"Invalid Pin"
+      },
+      "submitButtonText": "Proceed"
+    }
+  },
+  "confirmDialog": {
+    "default": {
+      "confirmtionMessage": "Are you sure you want to proceed?",
+      "okBtnText": "Yes",
+      "cancelBtnText": "No"
+    },
+    "custom": {
+      "reset.password.confirmation": "An email containing a link to reset the password will be sent to user, Click Yes to proceed",
+      "disable.user.confirmation": "You are about to disable this user. Are you sure?",
+      "enable.user.confirmation": "You are about to enable this user. Are you sure?",
+      "backBtn.confirmation": "You are about to leave this page. Are you sure?"
+    }
+  },
+  "physicians": {
+    "list": {
+      "physiciansLabel": "Physicians",
+      "createPhysicianButtonText": "Create New Physician",
+      "SearchLabel": "Search",
+      "searchByKeywordsPlaceholder": "Search",
+      "location": "Location",
+      "locationSelectPlaceholder": "Filter by location(s)",
+      "SearchBtnLabel": "Search",
+      "ResetBtnLabel": "Reset",
+      "tableHeader": {
+        "name": "Name",
+        "uniqueId": "Unique Id",
+        "otherIdentifiers": "Identifier",
+        "organization": "Organization",
+        "location": "Location"
+      },
+      "noResultFoundText": "No results found.",
+      "loadingText": "Loading..."
+
+    },
+    "editPhysician": {
+      "CreateNewPhysicianLabel": "Create Physician",
+      "EditPhysicianLabel": "Edit Physician",
+      "firstNameLabel": "Name",
+      "physicianFirstNamePlaceholder": "First Name",
+      "lastNameLabel": " ",
+      "physicianLastNamePlaceholder": "Last Name",
+      "genderLabel": "Gender",
+      "physicianGenderSelectPlaceholder": "Select gender",
+      "phoneLabel": "Phone",
+      "physicianSpecialityLabel": "Speciality",
+      "physicianSpecialitySelectPlaceholder": "Select speciality",
+      "physicianRoleLabel": "Role",
+      "physicianRoleSelectPlaceholder": "Select role",
+      "physicianOrganizationLabel": "Organization",
+      "UniqueIDLabel": "Unique Id",
+      "physicianOrganizationPlaceholder": "Select organization",
+      "checkNpiAvailabilityHeaderLabel": "Check NPI Availability",
+      "checkNpiAvailabilityLabel": "NPI",
+      "createBtnLabel": "Check Availability",
+      "uniqueIdLabel": "Unique Id",
+      "physicianIdentifierLabel": "Identifier",
+      "LocationListLabel": "Locations",
+      "physicianLocationPlaceholder": "Select location",
+      "existingNpiLabel": "A Physician with this NPI already exists.",
+      "SaveBtnLabel": "Save",
+      "CancelBtnLabel": "Cancel",
+      "idIsNotUnique": "This NPI is linked to another physician.",
+      "uniqueIdBlankError": "NPI can not be blank",
+      "editButtonLabel": "Edit"
+    },
+    "physicianEditFrom": {
+      "firstName": "Enter First Name",
+      "lastName": "Enter Last Name",
+      "phone": "Phone number should be numeric.",
+      "organization": "Select organization",
+      "locationList": "Select location",
+      "errorOnSubmitMessage": "Some fields contain invalid data.",
+      "successOnSubmitMessage": "Successfully saved.",
+      "organizations": "Select organization",
+      "locations": "Select location",
+      "checkNpiAvailabilityErrorMsg": "Enter NPI"
+    }
+  },
+  "licenseMessages": {
+    "gracePeriodMessage": "You have {{gracePeriodDays}} days remaining in the grace period. Please renew your license.",
+    "gracePeriodExpiredMessage": "Your License has expired, Please contact the system administrator.",
+    "blockMessage": "Your License has expired, Please contact the system administrator.",
+    "licenseIsNotValid": "The License is not valid. Please contact the system administrator.",
+    "networkErrorMessage": "Unable to validate the license.",
+    "authenticationFailureMessage": "The license check has failed. Update license immediately to access the portal.",
+    "permanentlyNetworkIssue": "Unable to communicate with the license server. Access will be blocked soon if connectivity is not restored."
+  },
+  "configManager": {
+    "configManagerLabel": "Config Manager",
+    "SaveBtnLabel": "Save",
+    "CancelBtnLabel": "Cancel",
+    "addNewBtnLabel": "Add New",
+    "successMsg": "Configuration updated and loaded successfully.",
+    "errorMsg": "Configuration updated and loaded successfully.",
+    "addItemInListSuccessMsg": "List has been updated.",
+    "addItemInListErrorMsg": "The changes to the list could not be saved. Please try again.",
+    "valueSetHeaderName": "Name",
+    "valueSetHeaderValue": "Value",
+    "addNew": "Add New",
+    "listHeaderValue": "List Item",
+    "addNewItem":"Add New Item",
+    "addNewItemName":"Name",
+    "addNewItemValue":"Value",
+    "addNewItemCancel":"Cancel",
+    "listItemValue":"List Item Value",
+    "remove": "Remove",
+    "boolean": {
+      "true": "True",
+      "false": "False"
+    },
+
+    "errorText": {
+      "numberError": "Should be valid number."
+    }
+
+  },
+  "firstLoginChangePassword": {
+    "header": "You must change your password before proceeding.",
+    "popMessage": "Use at least 8 characters with combination of characters, special character and symbols. Don’t use a password from another site, or something too obvious like your pet’s name.",
+    "newPassword": {
+      "placeHolderText": "New Password",
+      "blankErrorText": "Password can't be blank."
+    },
+    "confirmPassword": {
+      "placeHolderText": "Confirm Password",
+      "blankErrorText": "Password can't be blank."
+    },
+    "submit": {
+      "buttonText": "Change Password"
+    }
+  },
+  "agreement": {
+    "header": "HIPAA Compliance",
+    "text": "The patient records available through this data source are only for the use of authorized practices, physicians, nurses, employees or staff who have signed confidentiality agreements on file with the entity from which these records are obtained. These records contain information which is privileged, confidential and exempt from disclosure under applicable law. If the reader of this message is not the intended recipient, you are hereby notified that any access, dissemination, distribution or copying of this communication is strictly prohibited. Browsing for information regarding patients that are not under your immediate care is strictly prohibited, as is tampering or otherwise interfering with the electronic information delivery system. Patient care decisions should not be based solely on the medical images or report summaries that can be accessed here. Integration of clinical and laboratory information, review of the final radiology report, and, when appropriate, consultation with the radiologist(s) is recommended.</br></br> Your viewing of these records is tracked. Do you wish to proceed while agreeing to view only those patient’s records for which you have a clinical need?",
+    "acceptButton": "Accept",
+    "declineButton": "Decline",
+    "declineAgreementText": "You will not be able to access the portal without accepting the agreement. Do you want to sign out?"
+  },
+  "firstLoginChangePassword": {
+    "header": "Change Password is required on first login.",
+    "popMessage": "Use at least 8 characters with combination of characters, special character and symbols . Don’t use a password from another site, or something too obvious like your pet’s name.",
+    "newPassword": {
+      "placeHolderText": "New Password",
+      "blankErrorText": "Password can't be blank."
+    },
+    "confirmPassword": {
+      "placeHolderText": "Confirm Password",
+      "blankErrorText": "Password can't be blank."
+    },
+    "submit": {
+      "buttonText": "Change Password"
+    }
+  },
+  "agreement": {
+    "header": "HIPAA Compliance",
+    "text": "The patient records available through this data source are only for the use of authorized practices, physicians, nurses, employees or staff who have signed confidentiality agreements on file with the entity from which these records are obtained. These records contain information which is privileged, confidential and exempt from disclosure under applicable law. If the reader of this message is not the intended recipient, you are hereby notified that any access, dissemination, distribution or copying of this communication is strictly prohibited. Browsing for information regarding patients that are not under your immediate care is strictly prohibited, as is tampering or otherwise interfering with the electronic information delivery system.Patient care decisions should not be based solely on the medical images or report summaries that can be accessed here. Integration of clinical and laboratory information, review of the final radiology report, and, when appropriate, consultation with the radiologist(s) is recommended.</br></br> Your viewing of these records is tracked. Do you wish to proceed while agreeing to view only those patient’s records for which you have a clinical need?",
+    "acceptButton": "Accept",
+    "declineButton": "Decline",
+    "declineAgreementText": "You have declined the HIPAA agreement. This will log you out. Do you want to proceed?"
+  },
+  "questionnair": {
+    "NOTIFICATION_URL_KEY": "Questionnaire_Notify",
+    "uploadFiles":{
+      "confirmMessageOnUploadAll":"This will upload all the files. Are you sure you want to proceed?",
+      "uploadAllButtonLebel":"Start Upload",
+      "confirmMessageOnSubmit":"Have you uploaded all your medical records?",
+      "submitButtonLebel":"Done",
+      "atleastOneFileLabel":"(Upload atleast one file)",
+      "clearUploadsButtonLebel":"Clear Uploads",
+      "cancelUploadsButtonLebel":"Cancel Uploads",
+      "confirmMessageOnFolderUpload":"Use this tool to upload DICOM(s) provided by multiple patients. After you select this option, a .jnlp file is downloaded to your system. Ensure that JRE 7 (or newer version) is already installed before executing this file.",
+      "confirmMessageOnBulkUploadAsServiceUpload":"Use this tool to upload all the DICOMs available on your system/network to the portal automatically. After you select this option, a set of instructions is displayed. Follow these instructions to configure the service correctly. In case of any difficulties, please contact your system administrator.",
+      "BulkUploadtools":"Download Bulk Study Uploader Tool",
+      "BulkUploadStudiesLabel":"Bulk Upload Studies",
+      "BulkUploadStudiesText":"Use this tool to upload CDs or studies provided by multiple patients. After your you select this, a .jnlp file is downloaded to your system. Ensure that JRE 7 (or newer version) is already installed before executing this file.",
+      "BulkUploadAsServiceLabel":"DICOM Study Upload Service",
+      "BulkUploadAsServiceText":"Use this tool to upload all the DICOMs available on your system/network to the portal automatically. After you select this option, a set of instructions is displayed. Follow these instructions to configure the service correctly. In case of any difficulties, please contact your system administrator.",
+      "fileUploaderSccessText":"File(s) uploaded successfully.",
+      "cancelUploadMsg":"Uploads cancelled successfully.",
+      "BulkUploaderInstructionText":"<ol><li>click the download button ,a zip file with default properties will be downloaded .</li><li>Unzip the zip into a folder lets say c:\\Users\\some admin user\\MphRx-BulkUploader-Service</li><li>Now user can go inside the c:\\Users\\some admin user\\MphRx-BulkUploader-Service and modify the bulkUploader.properties file according to its specifications</li><li>change the listenerIP (that should be LAN IP address of the machine you are installing this on), serverURL (this should be the MphRx WebConnect URL where Skywalker will send the studies), username (a valid username for web connect which will be used to send the studies), password (password for this user) and localDirectory (make sure the path has forward slashes not Windows style backward slashes) , there are few things already provided in the file,which need not be changed like : client id , secret , token ,etc.</li><li>now run setup.bat inside the c:\\Users\\some admin user\\MphRx-BulkUploader-Service , right click on that file and select run as administrator .</li><li>your service will now have been installed as a windows service and can be used to send data using dcm toolkit 2 dcm send method .You can check your Services Control Manager in Windows (you can use %windir%\\system32\\services.msc from the command window)</li><li>The log file will be in c:\\Users\\some admin user\\MphRx-BulkUploader-Service\\logs\\bulkUploader.log</li><li>To test, you can send a DICOM file to MPHRXSKYWALKER@your ip address:9212, it should get uploaded by Skywalker to the WebConnect URL automatically.</li><li>To change something in the properties file, you have to stop the service, change the properties file and then restart the service.</li></ol>",
+      "BulkUploaderInstructionHeader":"Instructions to install Bulk Uploader As Service"
+    },
+    "status": {
+      "DRAFT": "Draft",
+      "PUBLISHED": "Published"
+    },
+    "acceptAgreementText":"I accept the terms & conditions provided for your services.",
+    "createEditQuestionnaire":{
+      "templateLabel":"Questionnaire",
+      "editLabel":"Edit",
+      "previewLabel":"Preview",
+      "createLabel":"Create",
+      "draftLabel":"Save as Draft",
+      "publishLabel":"Publish",
+      "editLabel":"Edit",
+      "discardVersion":"Discard Version",
+      "discardVersionText":"The current changes will be discarded and the questionnaire will be set to last published version. Are you sure you want to continue?",
+      "errorMsgDiscardVersion":"Problem in discarding version.",
+      "version":{
+        "heading":"View History",
+        "versionLabel":"Version"
+      },
+      "qbForm":{
+        "landingPageLabel":"Landing Page",
+        "viewEditLandingPageLabel":"View / Edit Landing Page",
+        "landingPageErrorMsg":"Give landing page content.",
+        "collectPatientDemographicsTitle":"Patient Demographics",
+        "collectPatientDemogrphicsLabel":"Patient Demographics Details",
+        "titleLabel":"Title",
+        "specialityLabel":"Speciality",
+        "descriptionLabel":"Description",
+        "reviewerLabel":"Reviewer",
+        "saveLabel":"Save & Proceed",
+        "titlePlaceHolder":"Title",
+        "specialityPlaceholder":"Select Speciality",
+        "reviewerPlaceholder":"Assign Reviewer",
+        "fileNamePlaceholder":"Select agreement file",
+        "descriptionPlaceholder":"Description",
+        "titleErrorMsg":"Enter a title for this questionnaire.",
+        "titleExistErrorMsg":"A questionnaire with this title already exists.",
+        "specialityErrorMsg":"Please select a speciality.",
+        "landingPageErrorMsg":"Select agreement page.",
+        "descriptionErrorMsg":"Please enter a description.",
+        "errorOnSubmitMessage":"Please complete or correct all the fields.",
+        "documentLabel":{
+          "headingLabel":"Show Document Uploader",
+          "fileLabel":"Upload File",
+          "folderLabel":"Upload Folder"
+        },
+        "demographicsLabel":"Collect Patient Demographics",
+        "agreementLabel":"Display Landing Page",
+        "documentDisplayLabel":{
+          "uploadFile":"Upload File",
+          "uploadFolder":"Upload Folder"
+        },
+        "AcceptanceText":"Acceptance text",
+        "demographicsDisplayLabel":"Patient demographic data is collected with this questionnaire.",
+        "agreementDisplayLabel":"A landing page is displayed before the questionnaire.",
+        "createLabel":"Create",
+        "saveProceedLabel":"Save & Proceed",
+        "cancelLabel":"Cancel",
+        "reviewerPlaceholder":"Assign Reviewer"
+      },
+      "addGroupHeadingLabel":"Group",
+      "questionTitleLabel":"Question Title",
+      "addGroupLabel": "Add Group",
+      "addQuestionLabel": "Add Question",
+      "editQuestionLabel": "Edit",
+      "addMoreLabel":"Add More",
+      "groupForm": {
+        "groupTitleLabel": "Group Title",
+        "groupTitlePlaceholder": "Title",
+        "groupTitleErrorMsg": "Enter group title.",
+        "errorOnSubmitMessage": "Please complete or correct all the fields.",
+        "saveAndProceedLabel": "Save & Proceed"
+      },
+      "questionForm": {
+        "titlePlaceholder": "Title",
+        "titleErrorMsg": "Enter question title.",
+        "deleteQuestionLabel": "Delete",
+        "errorOnRemoveMessage": "A Question Group must have atleast one question.",
+        "shortTextLabel": "Short Text",
+        "longTextLabel": "Long Text",
+        "singleChoiceLabel": "Options (Single Choice)",
+        "multipleChoiceLabel": "Options (Multiple Choice)",
+        "shortTextPlaceholder": "Enter Your response.",
+        "longTextPlaceholder": "Enter Your response.",
+        "errorOnRemoveOptionMessage": "This question must have atleast two choices.",
+        "saveLabel": "Save",
+        "cancelLabel": "Cancel",
+        "errorOnSubmitMessage": "Please complete or correct all the fields",
+        "optionErrorMsg": "Enter option.",
+        "optionDuplicateErrorMsg": "This option already exists."
+      },
+      "landingPageSaveLabel":"Save",
+      "landingPageCancelLabel":"Cancel",
+      "demographicLabel":{
+        "requiredDetails":"Select Required Details",
+        "resetDemographic":"Reset All",
+        "visibleLabel":"Visible",
+        "requiredLabel":"Required",
+        "pNameLabel":"Patient Name",
+        "pIdLabel":"Patient ID",
+        "phoneNumberLabel":"Phone Number",
+        "emailLabel":"Email",
+        "genderLabel":"Gender",
+        "dobLabel":"Date of Birth",
+        "phyNameLabel":"Physician Name",
+        "addressLabel":"Address",
+        "streetAddressLabel":"Street Address",
+        "cityLabel":"City",
+        "stateLabel":"State",
+        "zipLabel":"Zip Code",
+        "countryLabel":"Country",
+        "save":"Save",
+        "cancel":"Cancel",
+        "demographicsReadOnly":"Demographics",
+        "visibleReadOnly":"Visible",
+        "requiredReadOnly":"Required"
+      }
+    },
+    "listTemplates": {
+      "templateLabel": "Questionnaires",
+      "createTemplateButtonText": "Create New Questionnaire",
+      "searchLabel": "Search",
+      "searchByKeywordsPlaceholder": "Search",
+      "specialityLabel": "Speciality",
+      "specialityPlaceholder": "Select Specialty",
+      "searchButtonLabel": "Search",
+      "resetButtonLabel": "Reset",
+      "tableHeader": {
+        "template": "Questionnaire",
+        "speciality": "Category",
+        "sent": "Sent",
+        "responses": "Responded",
+        "unread": "Unread",
+        "status": "Status",
+        "action": "Actions"
+      },
+      "noResultFoundText": "No Result Found.",
+      "loadingText": "Loading...",
+      "emailLabel": "Enter Email-IDs",
+      "emailPlaceholder": "Enter Email ID",
+      "templateCloneSuccess": "Questionnaire successfully cloned.",
+      "successEmailMsg": "Email successfully sent.",
+      "sendQuestionnaire":{
+        "heading":"Send Questionnaire by Email",
+        "multipleEmailId":"Send Questionnaire to Multiple Email IDs",
+        "enterId":"Enter Email-IDs",
+        "enterIdErrorMsg":"Enter valid Email ID's",
+        "separateId":"Separate Multiple Email ID's with commas.",
+        "cancelLabel":"Cancel",
+        "singlePatient":"Send Questionnaire to Single Patient.",
+        "sixDigitPin":"(Secured 6-digit PIN will be sent to the patient's phone number below.)",
+        "singleSendButtonText":"Send",
+        "singleCancelButtonText":"Cancel",
+        "multipleSendButtonText":"Send",
+        "multipleCancelButtonText":"Cancel"
+      }
+    },
+    "patientResponseTemplate": {
+      "templateLabel": "Patient Responses",
+      "tableHeader": {
+        "template": "Questionnaire",
+        "speciality": "Category",
+        "sent": "Sent",
+        "responses": "Responses",
+        "unread": "Unread",
+        "status": "Status",
+        "action": "Action"
+      },
+      "noResultFoundText": "No result found.",
+      "loadingText": "Loading..."
+    },
+    "patientResponseList": {
+      "templateLabel": "Responses",
+      "tableHeader": {
+        "appId": "ApplicationId",
+        "status": "Status",
+        "name": "Patient Name",
+        "phoneNo": "Phone Number",
+        "downloadStatus": "Download",
+        "receivedTimeStamp": "Received",
+        "emrLabel": "Sent to EMR"
+      },
+      "emrStatus": {
+        "notNotified": "Do Not Notify",
+        "pending": "Notification Pending"
+      },
+      "templatesLabel": "Questionnaires",
+      "templatesLabelPlaceholder": "Search Questionnaire",
+      "successMsgForEmr": "Successfully sent to EMR",
+      "responsesText":"Responses"
+    },
+    "patResponse": {
+      "usernameLabel": "Patient Name",
+      "uploaderSelectFilesLebel":"Select Files",
+      "usernamePalceholder": {
+        "firstName": "First (Given) Name",
+        "lastName": "Last Name (Surname)"
+      },
+      "firstNameErrorMsg":"Enter your first name.",
+      "secondNameErrorMsg":"Enter your last name.",
+      "patIdLabel":"Patient Id / MRN",
+      "patEmailIdLabel":"Email Id",
+      "phyNameLabel":"Physician Name",
+      "patEmailIdErrorMsg":"Enter your Email Id.",
+      "patInvalidEmailIdErrorMsg":"Enter a valid Email Id.",
+      "patEmailIdPalceholder":"Enter your Email Id",
+      "phyNamePalceholder":"Enter physician name",
+      "patIdPlaceholder":"Enter your patient Id",
+      "phoneNoPlaceholder":"Enter phone number",
+      "patientIdErrorMsg":"Enter your patient ID.",
+      "phyNameErrorMsg":"Enter physician name.",
+      "dobLabel":"DOB",
+      "genderLabel":"Gender",
+      "genderSelectPlaceholder":"Select Gender",
+      "genderList":{
+        "Male" : "Male",
+        "Female" : "Female",
+        "Undifferentiated" : "Undifferentiated"
+      },
+      "dobErrorMsg":"Enter your date of birth.",
+      "addressErrorMsg":"Please fill Address line.",
+      "zipErrorMsg":"Please enter zip code.",
+      "stateErrorMsg":"Please fill state line.",
+      "countryErrorMsg":"Please fill country line.",
+      "cityErrorMsg":"Please fill city line.",
+      "genderErrorMsg":"Please select your gender.",
+      "address":{
+        "addressL1Label":"Address Line 1",
+        "addressL1Placeholder":"Enter address line 1",
+        "addressL2Label":"Address Line 2",
+        "addressL2Placeholder":"Enter address line 2",
+        "zipLabel":"ZIP",
+        "zipPlaceholder":"Enter your zip code",
+        "cityLabel":"City",
+        "cityPlaceholder":"Enter your city",
+        "stateLabel":"State/Province/Region",
+        "statePlaceholder":"Enter your State/Province/Region",
+        "countryLabel":"Country",
+        "countryErrorMsg":"Please select your country."
+      },
+      "addressPalceholder":"Enter your address",
+      "phoneNoLabel":"Phone Number",
+      "phoneNoPalceholder":"Enter Your Phone Number",
+      "phoneNoErrorMsg":"Enter phone number.",
+      "phoneNoInvalidErrorMsg":"Phone Number must be numeric.",
+      "errorOnSubmitMessage":"Please complete or correct all the fields.",
+      "tearmsAndConditionLabel":"I accept the terms and conditions of the service.",
+      "tearmsAndConditionErrorLabel":"Accept terms and conditions.",
+      "tncNextButtonLabel":"Next",
+      "demographicHeading":"Please enter your details",
+      "letsStartButton":"Let's Start",
+      "questionLabel":"Question",
+      "questionOfLabel":"of",
+      "previousQuestionLabel":"Previous",
+      "nextQuestionLabel":"Next",
+      "submitQuestionLabel":"Submit",
+      "upload":{
+        "confirmationMessageHeading":"Thank you for your response. ",
+        "confirmationMessageDetail":"Your information has been forwarded to your physician for review.",
+        "heading":"Upload Images and Medical Records",
+        "detailOne":"Please select the file(s) or folder(s) you wish to upload as medical records or documents with your response to the questionnaire, click Upload all and then submit the questionnaire.",
+        "detailTwo":"If you do not have any file(s) to upload, you can skip this step by clicking on the Submit button below.",
+        "dropZoneLabel":"Drop Zone for Files",
+        "uploadFileLabel":"Upload Files",
+        "uploadFolderLabel":"Upload Folder/CD",
+        "uploadQueueLabel":"Upload Queue",
+        "selectedFileLabel":"Total Selected Files",
+        "fileUploadedLabel":"Total Files Uploaded",
+        "fileNameLabel":"File Name",
+        "noOfInstancesLabel":"No. of Instances",
+        "sizeLabel":"File Size",
+        "actionsLabel":"Actions",
+        "studyIuIdLabel":"StudyId",
+        "patientNameLabel":"Patient Name",
+        "modalityLabel":"Modality",
+        "descriptionLabel":"Description",
+        "locationLabel":"Location",
+        "removeButtonLabel":"Remove",
+        "doneLabel":"Done",
+        "queueProgressLabel":"Queue Progress",
+        "formatErrorLabel":"Format Not Recognized",
+        "leavePageText":"Are you sure you want to navigate away from this page? This will interrupt file upload and may lead to loss of data."
+      },
+      "uploadFolder":{
+        "heading":"Upload Images & Medical Records",
+        "detailOne":"You can upload file(s) and folder(s) as medical records and documents.",
+        "detailTwo":"Please select Upload Files to launch the uploader tools.",
+        "detailThree":"If you do not have any file(s) to upload, you can skip this step by clicking on the Done button.",
+        "uploadFolderLabel":"Upload Files, Folder/CD",
+        "doneButtonLabel":"Done",
+        "confirmMessageOnSubmit":"You have not uploaded any files. Are you sure you want to continue?"
+      },
+      "invalidLoginText":"Invalid PIN"
+    },
+    "showPatResponse": {
+      "bornLabel": "Born",
+      "mailLabel": "EmailId",
+      "phoneNoLabel": "Mobile",
+      "patientIdLabel": "PatientID",
+      "genderLabel": "Gender",
+      "phyNameLabel": "Physician Name",
+      "GenderSelectPlaceholder": "Select your gender",
+      "downloadResponseLabel":"Download Response",
+      "downloadAllLabel":"Download All",
+      "sentToEMRLabel":"Sent To EMR",
+      "demographicsLabel":"Demographics",
+      "addressLabel":"Address",
+      "addressLine1Label":"Address line 1",
+      "addressLine2Label":"Address line 2",
+      "cityLabel":"City",
+      "stateLabel":"State",
+      "countryLabel":"Country",
+      "zipLabel":"Zip",
+      "viewResponseLabel":"View Response",
+      "relatedDocumentsLabel":"Related Documents",
+      "noQuestionAvailableLabel":"No Questions available",
+      "relatedDocumentsTable":{
+        "nameLabel":"Name",
+        "noOfInstanceLabel":"No. of Instance",
+        "sizeLabel":"Size",
+        "actionsLabel":"Actions",
+        "noResultFoundText":"No Documents Uploaded.",
+        "loadingText":"Loading...",
+        "errorMessage":"Problem in loading documents.",
+        "errorMsgOpenViewer":"Problem in opening viewer",
+        "studyInProcessLabel":"Uploaded study in process, try after sometime."
+      }
+    },
+    "sendQuestionnaire":{
+      "heading":"Send Questionnaire",
+      "questionnaireSearchPlaceholder":"Search Questionnaire",
+      "previewQuestionnaireButtonLabel":"Preview",
+      "specialityLabel":"Speciality",
+      "descriptionLabel":"Description",
+      "patientDetailsLabel":"Patient Details",
+      "sendEmailLabel1":"The patient will receive an email link and a secured PIN on their phone to protect their personal health information.",
+      "sendEmailLabel2":"The patient will receive an email link to protect their personal health information.",
+      "verificationLabel":"Please verify the contact information for the patient below.",
+      "emailIDLabel":"Email ID",
+      "phoneNumberLabel":"Phone Number",
+      "showPhoneNoErrorMsg":"Enter phone number.",
+      "emailIDPlaceholder":"Enter Email Id",
+      "phoneNumberPlaceholder":"Enter phone number",
+      "sendQuestionnaireButtonLabel":"Send Questionnaire",
+      "cancelSendQuestionnaireButtonLabel":"Cancel",
+      "mailSendSuccess":"Questionnaire successfully sent.",
+      "mailSendError":"Problem in sending questionnaire."
+    },
+    "questionnaireResponses":{
+      "heading":"Questionnaire Responses",
+      "tableHeader":{
+        "title":"Questionnaire Title",
+        "sentOn":"Sent On",
+        "receivedOn":"Received On",
+        "responseReceivedOn":"Submitted",
+        "status":"Status"
+      },
+      "status":{
+        "sent":"Pending",
+        "responsed":"Responded",
+        "reviewed":"Reviewed"
+      },
+      "noResultFoundText":"No Result Found.",
+      "loadingText":"Loading...",
+      "searchByKeywordsPlaceholder":"Questionnaire title",
+      "searchButton":"Search"
+    }
+  },
+  "widgetGallery": {
+    "header": "Widget Gallery",
+    "search": {
+      "searchByKeywordLabel": "Keyword",
+      "selectSizeLabel": "Select Size",
+      "selectUserTypeLabel": "Select User",
+      "searchButtonText": "Search",
+      "selectWidgetTypeLabel": "Type",
+      "selectPublisherLabel": "Publisher",
+      "selectSystemWidgetText": "System",
+      "selectCustomWidgetText": "Custom",
+      "filterButtonText": "{{showWidgetFilters?'Hide':'Show'}} Filters",
+      "sortByLabel": "Sort by",
+      "sortByRecentDate": "Most Recent",
+      "sortByNameAtoZ": "Name A-Z",
+      "sortByNameZtoA": "Name Z-A"
+
+    },
+    "list": {
+      "nameLabel": "Name",
+      "urlLabel": "URL",
+      "fullPageLabel": "Full Page URL",
+      "descriptonLabel": "Description",
+      "contextLabel": "Context",
+      "sizeLabel": "Size",
+      "actionsLabel": "Actions",
+      "deleteButtonLabel": "Delete",
+      "editButtonLabel": "Edit",
+      "noResultFoundText": "No Result Found.",
+      "loadingText": "Loading...",
+      "createWidgetButtonText": "Create",
+      "installWidgetLabel": "Install",
+      "unInstallWidgetLabel": "Uninstall",
+      "successAddMessage": "Widget has been added successfully.",
+      "errorAddMessage": "Couldn't add widget in the dashboard.",
+      "successRemoveMessage": "Widget removed from the dashboard successfully.",
+      "alreadyAddedMessage": "Widget already exists in dashboard.",
+      "errorRemoveMessage": "Couldn't remove widget from the dashboard.",
+      "doesNotExistRemoveMessage": "Widget doesn't exist in dashboard.",
+      "successDeleteMessage": "Widget has been deleted successfully.",
+      "observationSavedText": "Saved successfully."
+    }
+  },
+  "patientLinking": {
+    "list": {
+      "linkingPatientLabel": "My Family",
+      "linkPatientButton": "Add Family Members",
+      "tableHeader": {
+        "name": "Name",
+        "phone": "Phone",
+        "lastVisitDate": "Last Visit Date",
+        "relationship": "Relationship",
+        "linkingStatus": "Status",
+        "actionText": "Action"
+      },
+      "noResultFoundText": "No results found.",
+      "loadingText": "Loading...",
+      "statusLabel": {
+        "GRANTED": "Linked",
+        "PENDING": "Pending OTP",
+        "DENIED": "Access Denied"
+      },
+      "changeRelationshipButtonText":"Change Relationship",
+      "relationshipModal":{
+        "title":"Change Relationship",
+        "okButtonLabel":"Ok",
+        "cancelButtonLabel":"Cancel"
+      }
+    },
+    "linkPatient": {
+      "linkPatientFormHeader": "Link Patient",
+      "cancelButtonText": "Cancel",
+      "linkButtonText": "Link",
+      "nameLabel": "Name",
+      "birthdateLabel": "Born",
+      "genderLabel": "Gender",
+      "phoneLabel": "Phone No.",
+      "relationLabel": "Relationship"
+    },
+    "generateOtp": {
+      "generateOtpFormHeader": "Verification needed",
+      "text1": "A patient match was found, but we need to verify before we link their record. Clicking the Send OTP button below will generate a OTP which will be sent to the registered mobile number. Enter the OTP here to complete the verification process.",
+      "text2": "Do you want to proceed?",
+      "labNumberLabel": "Lab Number",
+      "phoneNumberLabel": "Phone No.",
+      "lastNameLabel": "Last Name",
+      "firstNameLabel": "First Name",
+      "dobLabel": "Date of Birth",
+      "genderLabel": "Gender",
+      "cancelButtonText": "Cancel",
+      "sendOtpBottonText": "Send OTP",
+      "relationshipLabel": "Relationship"
+    },
+    "verifyOtp": {
+      "generateOtpFormHeader": "Verification needed",
+      "text1": "A patient match was found, but we need to verify before we link their record. Clicking the Send OTP button below will generate a OTP which will be sent to the the registered mobile number. Enter the OTP here to complete the verification process.",
+      "text2": "Do you want to proceed?",
+      "note": "Note: If you do not have the OTP right now, you can do this later on.",
+      "otpLabel": "OTP",
+      "phoneNumberLabel": "Phone No.",
+      "emailLabel": "Email ID",
+      "doLaterButtonText": "I'll do it later",
+      "verifyOtpBottonText": "Verify",
+      "error.oneTimePassword": "Enter the correct OTP.",
+      "reGenerateOtpLinkText": "Regenerate OTP."
+    },
+    "responseMessage": {
+      "patientNotFound": "No patient found.",
+      "multiplePatientFound": "Multiple patients found.",
+      "searchFailure": "Unable to search for patients.",
+      "linkedPatientListFailure": "Unable to fetch patient list.",
+      "linkPatientFailure": "Unable to link this patient record. Please try again later.",
+      "generateOtpFailure": "Unable to generate a OTP. Please try again.",
+      "generateOtpSuccess": "OTP sent successfully.",
+      "verifyOtpInvalid": "Please enter the correct OTP.",
+      "verifyOtpFailure": "Unable to verify the OTP. Please try again later.",
+      "alreadyLinked": "This patient is already in your list.",
+      "forSuccessfullyAdded": "The patient has been added to the list of your family members.",
+      "autoLinkingIsOff": "Unable to link this patient to your account. Please contact the system administrator.",
+      "relationUpdated":"Relationship successfully updated.",
+      "relationNotUpdates":"Unable to update relation.",
+      "relationUpdateFailure":"Some error occurred."
+    },
+    "reletionshipText":{
+      "Self":"Self",
+      "self":"Self",
+      "Spouse":"Spouse",
+      "Caregiver":"Caregiver",
+      "Guardian of Minor Child":"Guardian of Minor Child",
+      "Significant Other":"Significant Other",
+      "Parent":"Parent",
+      "Guardian of Adult Child":"Guardian of Adult Child"
+    },
+    "searchForm":{
+      "patientSearchFormHeader": "Search Patient for Linking",
+      "searchButtonText": "Search Patient",
+      "firstNameLabel":"First Name",
+      "firstNamePlaceHolder":"First Name",
+      "firstNameRequiredError":"First Name can not be blank.",
+      "lastNameLabel":"Last Name",
+      "lastNamePlaceHolder":"Last Name",
+      "lastNameRequiredError":"Last Name can not be blank.",
+      "genderLabel":"Gender",
+      "genderRequiredError":"Gender can not be blank",
+      "dateOfBirthLabel":"Date of Birth",
+      "birthdateRequiredError":"Date of Birth can not be blank.",
+      "relationshipLabel":"Relationship",
+      "relationshipRequiredError":"Relationship can not be blank.",
+      "selectOptions":{
+        "defaultSelect":"Select",
+        "Self":"Self",
+        "self":"Self",
+        "Spouse":"Spouse",
+        "Caregiver":"Caregiver",
+        "Guardian of Minor Child":"Guardian of Minor Child",
+        "Significant Other":"Significant Other",
+        "Parent":"Parent",
+        "Guardian of Adult Child":"Guardian of Adult Child",
+        "Female":"Female",
+        "Male":"Male",
+        "Other":"Other"
+      }
+    }
+
+  },
+  "patientUploadRecords": {
+    "blockedProgress":{
+      "loadingText":"Please Wait...",
+      "description":"Scanned {{scanned}} of {{total}}"
+    },
+    "headerInfo": {
+      "uploadPageHeader": "Upload Records"
+    },
+    "tagsData": {
+      "documentTypeLabel": "Document Type",
+      "documentTypePlaceholder": "Select Document Type",
+      "documentDateLabel": "{{tagName}}",
+      "conditionLabel": "Condition",
+      "patientConditionPlaceholder": "Select Condition",
+      "physicianLabel": "{{tagName}}",
+      "physicianPlaceholder": "Search Physician",
+      "UniqueIDLabel": "NPI",
+      "encounterLabel": "Encounter",
+      "encounterPlaceholder": "Select Encounter",
+      "locationLabel": "{{tagName}}",
+      "locationPlaceholder": "Search Location",
+      "descriptionLabel": "Description",
+      "descriptionPlaceholder": "Enter Description",
+      "resetLabel": "Reset"
+    },
+    "errorText": {
+      "dateNotValidText": "Not a valid date.",
+      "invalidFileText":"{{noOfFiles}} files could not be uploaded as they were not in a supported format {{formats}}."
+    },
+    "fileData": {
+      "headerForSelectFile": "Select Files",
+      "headerForQueueFile": "Upload Queue",
+      "dropZoneLabel": "Drop Zone for Files",
+      "totalFileLabel": "Total Files Selected",
+      "totalUploadFileLabel": "Total Files Uploaded",
+      "fileHeader": {
+        "nameLabel": "Name",
+        "instanceLabel": "No. of Instances",
+        "sizeLabel": "Size",
+        "actionsLabel": "Actions"
+      },
+      "studyIdLabel": "studyIuId: ",
+      "patientNameLabel": "Patient Name",
+      "queueHeader": "Queue Progress",
+      "uploadAllLabel": "Submit",
+      "clearUploadsLabel": "Clear Uploads",
+      "submitLabel": "Done",
+      "uploadFilesLabel": "Upload Files",
+      "uploadFolderLabel": "Upload Folder/CD",
+      "removeLabel": "Remove"
+    },
+    "listDocuments":{
+      "header":"Documents",
+      "searchLabel":"Search",
+      "searchByKeywordsPlaceholder":"Search",
+      "searchButtonLabel":"Search",
+      "resetButtonLabel":"Reset",
+      "tableHeader":{
+        "patient":"Patient",
+        "docType":"Document Type",
+        "description":"Description",
+        "date":"Date",
+        "condition":"Condition",
+        "location":"Location",
+        "physician":"Physician",
+        "action":"Action(s)",
+        "downloadStatus":"Download"
+      },
+      "idLabel": "ID",
+      "bornLabel": "Born",
+      "genderLabel": "Gender",
+      "gender": {
+        "M": "Male",
+        "F": "Female",
+        "U": "Undifferentiated",
+        "": "Unavailable",
+        "O": "Other"
+      },
+      "noResultFoundText": "No results found.",
+      "loadingText": "Loading...",
+      "XDSDocumentEntryOID": "XDSDocumentEntryOID",
+      "errorMsgOpenViewer":"Problem in opening viewer",
+      "studyInProcessLabel":"Uploaded study in process, try after sometime",
+      "defaultType":"Select Type",
+      "defaultPatientCondition": "Select Condition",
+      "documentTypeLabel":"Document Type",
+      "dateLabel":"Date",
+      "datePlaceholder":"Uploaded Date",
+      "conditionLabel":"Condition",
+      "physicianLabel":"Physician",
+      "searchLabel":"Search",
+      "resetLabel":"Reset",
+      "defaultCondition":"Select Condition",
+      "searchHeader":"Search"
+    },
+    "searchCriteria": {
+      "clearCriteriaButton": "Clear",
+      "encounter": "Encounter",
+      "keyword": "Keyword",
+      "subject": "Patient ID",
+      "type": "Type"
+    }
+  },
+  "dateDropDown": {
+    "invalidDateError": "Invalid date",
+    "blankDateError": "Date can't be blank.",
+    "months": {
+      "January": "January",
+      "February": "February",
+      "March": "March",
+      "April": "April",
+      "May": "May",
+      "June": "June",
+      "July": "July",
+      "August": "August",
+      "September": "September",
+      "October": "October",
+      "November": "November",
+      "December": "December"
+    },
+    "dayPlaceholder": "Day",
+    "monthPlaceholder": "Month",
+    "yearPlaceholder": "Year"
+  },
+
+  "editUserProfile": {
+    "profileLabel": "My Profile",
+    "patientProfileLabel": "Patient Profile",
+    "personalDetailLabel": "Personal Details",
+    "personalDetail": {},
+    "mailingAddressLabel": "Mailing Address",
+    "contactInformationLabel": "Contact Information",
+    "emergencyContactLabel": "Emergency Contact",
+    "bornLabel": "Born",
+    "genderLabel": "Gender",
+    "relationshipLabel": "Relationship",
+    "nicknameLabel": "Known as",
+    "phoneNumberLabel": "Phone Numbers",
+    "nameValidationError":"First Name can not be blank.",
+    "emailLabel": "Email",
+    "socialAccountLabel": "Social Account",
+    "addressLabel": "Address",
+    "downloadReportText": "Download Report",
+    "accessListLinkText": "Access List",
+    "downloadReportText": "Download Report",
+    "addressLabel": "Address",
+    "telecom":{
+      "Mobile":"Mobile",
+      "Home Phone":"Home Phone"
+    },
+    "placeholder": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "middleName": "Middle Name",
+      "phoneNumber": "Phone Number",
+      "email": "Email",
+      "nickname": "Nickname",
+      "contact": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "phoneNumber": "Phone Number",
+        "email": "Email",
+        "line1": "Line 1",
+        "line2": "Line 2",
+        "city": "City",
+        "state": "State",
+        "country": "Country",
+        "relationship": "Relationship"
+      },
+      "address": {
+        "useCode": "Use Code",
+        "country": "Country",
+        "line": "Line",
+        "state": "State",
+        "zip": "Zip",
+        "city": "City"
+      }
+    },
+    "link": {
+      "addNewPhoneNumber": "Add a phone number",
+      "addEmail": "Add an email address",
+      "addAddress": "Add mailing address",
+      "addEmergencyContact": "Add emergency contact",
+      "unverifiedLinkText": "Unverified"
+    },
+    "sentOtpSuccessMessage": "A OTP has been sent to {{contact}} to verify new contact.",
+    "sentOtpFailureMessage": "The OTP could not be sent due to an unexpected error.",
+    "incorrectOtpEntered": "This OTP is not correct.",
+    "updateFailureMessage": "Your profile was not updated due to an unexpected error.",
+    "sendingAlertMailFailure": "Alert mail sending failed due to some error.",
+    "saveButtonText": "Save",
+    "cancelButtonText": "Cancel",
+    "facebookButtonText": "Connect with Facebook",
+    "accountIsAlreadyExist": "This account is already linked with your profile.",
+    "twitterButtonText": "Connect with Twitter",
+    "error": {
+      "phoneNumberValidation": "Please enter a valid phone number.",
+      "emailIdValidation": "Please enter a valid Email Id.",
+      "zipCodeValidation": "Please enter a valid zip code.",
+      "invalidDate": "Invalid date."
+    }
+  },
+  "encounters": {
+    "list": {
+      "header": "Medical History",
+      "classCode": {
+        "Outpatient": "Outpatient",
+        "Inpatient": "Inpatient",
+        "Emergency": "Emergency",
+        "Session": "Session",
+        "Follow-up": "Follow-up",
+        "N": "N"
+      },
+      "typeValues": {
+        "accident": "Accident",
+        "Emergency": "Emergency",
+        "labor and delivery": "Labor and Delivery",
+        "routine": "Routine"
+      },
+      "noResultFoundText": "No results found.",
+      "loadingText": "Loading..."
+    },
+    "search": {
+      "keywordLabel": "Keyword",
+      "searchButtonText": "Search",
+      "startDateFromLabel": "From",
+      "startDateToLabel": "To"
+    },
+    "searchCriteria": {
+      "keywordSearch": "Keyword",
+      "clearCriteriaButton": "Clear",
+      "encounterDateFrom": "From",
+      "encounterDateTo": "To"
+    },
+    "quickLinks": {
+      "diagnosticOrder": {
+        "Lab": "Lab - {{count}}",
+        "lab": "Lab - {{count}}",
+        "rad": "Radiology - {{count}}",
+        "Radiology": "Radiology - {{count}}",
+        "other": "Others - {{count}}",
+        "Other": "Others - {{count}}"
+      },
+      "documentReference": {
+        "medication": "Medications - {{count}}",
+        "dischargeSummary": "Discharge Summary - {{count}}",
+        "other": "Others - {{count}}",
+        "lab": "Lab - {{count}}",
+        "rad": "Radiology - {{count}}",
+        "Discharge Note": "Discharge Note - {{count}}",
+        "Radiology Report": "Radiology Report - {{count}}",
+        "Other": "Other Results - {{count}}",
+        "Others":"Other Documents - {{count}}",
+        "Prescription": "Prescriptions - {{count}}",
+        "Doctor's Letter": "Doctor's Letters - {{count}}",
+        "Medical Summary": "Medical Summaries - {{count}}",
+        "Test Results": "Test Results - {{count}}",
+        "DICOM Images":"DICOM Images - {{count}}"
+      },
+      "medicalPrescription": {
+        "medicationPrescription": "Medications ({{count}})",
+        "medicationOrder": "Medications ({{count}})"
+      }
+    },
+    "unavailableLocationText":"Location unavailable.",
+    "unavailableReasonText":"No reason provided."
+
+  },
+  "medication": {
+    "medicine.name.label": "Name",
+    "dosages.label": "Dosage And Instruction",
+    "doctor.label": "Prescriber",
+    "duration.label": "Duration",
+    "medicine.time.label": "Medicine Time",
+    "asNeeded.label": "As Needed",
+    "status.label": "Status",
+    "dateStarted.label": "Date Started",
+    "status":{
+      "active":"Active"
+    }
+  },
+  "allergy": {
+    "name.label": "Name",
+    "reaction.label": "Reaction",
+    "severity.label": "Severity",
+    "source.label": "Source",
+    "patientReported":"Patient Reported"
+  },
+  "condition": {
+    "name.label": "Name",
+    "period.label": "Period",
+    "location.label": "Location",
+    "status.label": "Status",
+    "active.button.label":"Active",
+    "all.button.label":"All",
+    "status":{
+      "active":"Active",
+      "relapse":"Relapse",
+      "remission":"Remission",
+      "resolved":"Resolved",
+      "Confirmed":"Confirmed",
+      "null":"Unavailable"
+    },
+    "severity.label": "Severity",
+    "onset.label": "Period"
+  },
+  "familyMemberHistory": {
+    "name.label": "Name",
+    "age.label": "Age",
+    "relationship.label": "Relation",
+    "recordDate.label": "Record Date",
+    "status.label": "Status",
+    "born.label": "Born",
+    "gender.label": "Gender",
+    "condition":{
+      "code.label": "Condition",
+      "outcome.label": "Condition Outcome",
+      "onset.label": "Onset Age",
+      "note.label": "Additional Notes",
+      "unavailableText": "No conditions available for this record."
+    },
+    "status":{
+      "partial":"Partial",
+      "completed":"Completed",
+      "entered-in-error":"Entered in error",
+      "health-unknown":"Health unknown",
+      "unknown":"Unknown",
+      "null":"Unavailable"
+    }
+  },
+  "patientBanner": {
+    "quickLinks": "Quick Links",
+    "overview": "Overview",
+    "records": "Results",
+    "history": "History",
+    "medications": "Medications",
+    "familyMembers": "Family Members",
+    "conditions": "Conditions",
+    "allergies": "Allergies",
+    "patientProfile": "Patient Profile",
+    "uploadedDocument": "Documents",
+    "questionnaireResponses": "Questionnaire",
+    "appointments": "Appointments",
+    "observations": "Observations",
+    "actions": {
+      "heading":"Action",
+      "orderTest":"Order Test",
+      "sendQuestionnaire":"Send Questionnaire"
+    }
+  },
+  "xdsBanners": {
+    "xdsErrorLog": "XDS Errors"
+  },
+  "logical": {
+    "group": {
+      "customizations.label": "Customizations",
+      "system.label": "System",
+      "integrations.label": "Integrations",
+      "misc.label": "Miscellaneous",
+      "mobileApp.label": "Mobile App"
+    },
+    "subgroup": {
+      "settings.label": "Settings",
+      "settings.desc.label": "System Settings of the Applications",
+      "list.label": "Lists",
+      "list.desc.label": "Lists and Mapping Tables for Configurable Data Elements",
+      "layout.label": "Layout",
+      "layout.desc.label": "Customize Layouts(lists,reports)",
+      "email.label": "Email",
+      "email.desc.label": "Customize Email Templates",
+      "userInterface.label": "User Interface",
+      "userInterface.desc.label": "User Interface",
+      "skywalker.label": "Skywalker",
+      "skywalker.desc.label": "Skywalker Configuration",
+      "otp.label": "OTP",
+      "otp.desc.label": "OTP Settings"
+    }
+  },
+  "imageViewer": {
+    "imageNotAvailable": "Image not Available",
+    "modality": "Modality",
+    "patientName": "Patient Name",
+    "patientId": "MRN",
+    "studyDateTime": "Study Date/Time",
+    "accessionId": "Accession ID",
+    "seriesNo": "Series No",
+    "skipVideo": "Video playback not supported. Skipping.",
+    "totalNoOfInstances": "Total Instances",
+    "disabledForIE": "Image viewer works well for Internet Explorer 11+",
+    "notForDiagnosticPurpose": "Not for Diagnostic Purposes",
+    "group.label": "Image viewer",
+    "group.desc.label": "Diagnostic Image Viewer for DICOM Studies",
+    "framePerSecondtext": "Frame Per Second",
+    "zoom": "Zoom"
+  },
+  "useAgfaXEROViewer.key.label": "Agfa XERO Viewer",
+  "useCustomParamsForDiagnosticViewerURL.key.label": "Use Custom Params for Diagnostic Viewer URL",
+  "agfaXEROViewerFinalURLContextPath.key.label": "Agfa XERO Viewer Final URL Context Path",
+  "agfaXEROViewerRequestTicketContextPath.key.label": "Agfa XERO Viewer Request Ticket Context Path",
+  "agfaXEROViewerWADOContextPath.key.label":"Agfa XERO Viewer Wado Context Path",
+  "agfaXEROViewerRequestTicketParams.key.label": "Agfa XERO Viewer Request Ticket Params",
+  "agfaXEROViewerInitialDisplayParams.key.label": "Agfa XERO Viewer Initial Display Params",
+  "agfaXEROViewerQueryConstraintParams.key.label": "Agfa XERO Viewer Query Constraint Params",
+
+  "angularWebconnect.key.label":"Angular Webconnect Settings",
+  "angularWebconnect.group.desc.label":"Angular Webconnect Settings for PDF, Mail Link, Logo",
+  "angularWebconnect.url.key.label":"Angular Webconnect URL",
+  "angularWebconnect.appCss.key.label":"Angular app.css Path",
+  "angularWebconnect.bootstrapCss.key.label":"Angular bootstrap.css Path",
+  "angularWebconnect.headerLogo.key.label":"Angular Path for Header Logo",
+  "angularWebconnect.buttonImage.key.label":"Angular ButtonImage URL",
+
+  "emr.group.label": "EMR/HIS",
+  "emr.group.desc.label": "EMR/HIS System Integrations",
+  "orbisMe.username.key.label": "Username",
+  "orbisMe.password.key.label": "Password",
+  "orbisMe.passPhrase.key.label": "Pass Phrase",
+  "smtpConfig.group.label": "SMTP Server",
+  "smtpConfig.group.desc.label": "SMTP Server Settings (Require restart)",
+  "grails.mail.host.key.label": "Host",
+  "grails.mail.port.key.label": "Port",
+  "grails.mail.username.key.label": "User Name",
+  "grails.mail.password.key.label": "Password",
+  "grails.mail.props.key.label": "Properties",
+  "availableModalitiesForSearch.group.label": "Modalities",
+  "availableModalitiesForSearch.group.desc.label": "List of Available Modalities",
+  "availableModalitiesForSearch.key.label": "Modalities",
+  "availableRecordTypes.group.label": "Record Types",
+  "availableRecordTypes.key.desc.label": "Classification of Reports in the Portal",
+  "availableRecordTypes.group.desc.label": "Classification of Reports in the",
+  "availableRecordStatuses.group.label": "Record Statuses",
+  "availableRecordStatuses.group.desc.label": "System List of Order Status Values",
+  "availableRecordStatuses.key.desc.label": "System List of Order Status Values",
+  "availableGenderList.group.label": "Gender List",
+  "availableGenderList.group.desc.label": "Gender List",
+  "availableGenderList.key.desc.label": "Gender List",
+  "physicianSpecialties.group.label": "Physician Specialties",
+  "physicianSpecialties.group.desc.label": "List of Specialties of Practitioners",
+  "physicianSpecialties.key.desc.label": "List of Specialties of Practitioners",
+  "physicianDesignations.group.label": "Physician Designation",
+  "physicianDesignations.group.desc.label": "List of Designations of Practitioners",
+  "physicianDesignations.key.desc.label": "List of Designations of Practitioners",
+  "minervaDateFormat.key.label": "Minerva Date Format",
+  "minervaDateFormat.group.desc.label": "Minerva Date Format",
+  "consusDateFormat.key.label": "Consus Date Format",
+  "consusDateFormat.group.desc.label": "Consus Date Format",
+  "consusDateTimeFormat.key.label": "Consus Date & Time Format",
+  "consusDateTimeFormat.group.desc.label": "Consus Date & Time Format",
+  "reportHeader.key.label": "Report Header",
+  "reportHeader.group.desc.label": "Report Header",
+  "reportFooter.key.label": "Report Footer",
+  "reportFooter.group.desc.label": "Report Footer",
+  "orderHeader.key.label": "Order Header",
+  "orderHeader.group.desc.label": "Order Header",
+  "orderFooter.key.label": "Order Footer",
+  "orderFooter.group.desc.label": "Order Footer",
+  "radReportBody.key.label": "Rad Report Body",
+  "radReportBody.group.desc.label": "Rad Report Body",
+  "sharingEmailNotification.group.label": "Sharing",
+  "sharingEmailNotification.group.desc.label": "Sharing Email Templates",
+  "sharingEmailNotification.mailSubject.key.label": "Mail Subject",
+  "sharingEmailNotification.mailBody.key.label": "Mail Body",
+  "reset.password.group.label": "Reset Password",
+  "reset.password.group.desc.label": "Reset Password Template",
+  "reset.password.mailSubject.key.label": "Reset Password Subject",
+  "reset.password.mailBody.key.label": "Reset Password Mail Body",
+  "reset.password.expiryInHours.key.label": "Reset Password Link Expiry (In Hours)",
+  "license.group.label": "Licence",
+  "license.group.desc.label": "Licence Details",
+  "license.key.key.label": "Licence Key",
+  "license.folderPath.key.label": "Folder Path",
+  "license.jobInterval.key.label": "Job Interval",
+  "license.gracePeriodMessage.key.label": "Grace Period Message",
+  "license.gracePeriodExpiredMessage.key.label": "Grace Period Expired Message",
+  "license.blockMessage.key.label": "Block Message",
+  "license.licenseIsNotValid.key.label": "License is Not Valid",
+  "license.networkErrorMessage.key.label": "Network Error Message",
+  "license.permanentlyNetworkIssue.key.label": "Permanently Network Issue",
+  "skywalker.group.label": "Skywalker",
+  "skywalker.group.desc.label": "Skywalker Configuration",
+  "skywalker.zipDownloadBaseFolderPath.key.label": " Zip Download Base Folder Path",
+  "skywalker.jnlpFilesLocation.key.label": "Jnlp Files Location",
+  "skywalker.uploadedFileDir.key.label": "Uploaded File Dir",
+  "skywalker.defaultConfig.key.label": "Default Config",
+  "smsConfig.group.label": "SMS Config",
+  "smsConfig.group.desc.label": "SMS - OTP Config",
+  "smsConfig.messageText.key.label": "Message Text",
+  "smsConfig.maxNumberForOtp.key.label": "Max No. For OTP",
+  "smsConfig.minNumberForOtp.key.label": "Min No. For OTP",
+  "smsConfig.expiryTimeForOtpInMinutes.key.label": "Expiry Time For OTP in Minutes",
+  "smsConfig.gatewayUrl.key.label": "Gateway URL",
+  "smsConfig.gatewayUrlParameterKeyCodeValueMap.key.label": "Gateway URL Parameter Key Code Value Map",
+  "smsConfig.gatewayUrlParameters.key.label": "Gateway URL Parameters",
+  "applicationEmailOTPVerification.group.label": "Application Email OTP Verification",
+  "applicationEmailOTPVerification.group.desc.label": "Application Email OTP Verification Settings",
+  "applicationEmailOTPVerification.mailSubject.key.label": "Mail Subject",
+  "applicationEmailOTPVerification.mailBody.key.label": "Mail Body",
+  "signUpConfig.group.label": "Sign Up",
+  "signUpConfig.group.desc.label": "Sign Up Config",
+  "signUpConfig.messageText.key.label": "Message Text",
+  "signUpConfig.pateintMatchingLogicForSignUp.key.label": "Patient Matching Logic for Sign Up",
+  "signUpConfig.genderMatch.key.label": "Gender Match",
+  "login.group.label": "Login",
+  "login.group.desc.label": "Login Settings",
+  "passwordExpiryDurationInDays.key.label": "Password Expiry Duration in Days",
+  "passwordMaximumRetriesToBlockUser.key.label": "Password Maximum Retries to Block User",
+  "documentReferenceTypeMap.group.label": "Document Reference Type",
+  "documentReferenceTypeMap.group.desc.label": "Document Reference Type",
+  "documentReferenceTypeMap.key.label": "Document Reference Type",
+  "availableWidgetContexts.group.label": "Available Widget Contexts",
+  "availableWidgetContexts.group.desc.label": "Available Widget Contexts Desc",
+  "availableWidgetContexts.key.label": "Available Widget Contexts",
+  "availableUserTypeForWidget.group.label": "Available User Type for Widget ",
+  "availableUserTypeForWidget.group.desc.label": "Available User Types for Widget",
+  "availableUserTypeForWidget.key.label": "Available User Type for Widget",
+  "availableWidgetSizes.group.label": "Available Widget Sizes",
+  "availableWidgetSizes.group.desc.label": "Available Widget Sizes",
+  "availableWidgetSizes.key.label": "Available Widget Sizes",
+  "mobileApp.group.desc.label": "Mobile App",
+  "mobileApp.key.label": "Mobile App",
+  "iosAppRedirectUrl.key.label": "IOS Redirct URL",
+  "androidAppRedirectUrl.key.label": "Android Redirect URL",
+  "bodySites.group.label" : "Body Sites",
+  "bodySites.group.desc.label" : "Body Sites Available for Tests",
+  "testReasons.group.label" : "Test Reasons",
+  "testReasons.group.desc.label" : "Test Reasons Available for Tests",
+  "timeZone.key.label" : "Time Zone",
+  "timeZone.label" : "Time Zone Offset",
+  "timeZone.group.desc.label" : "Time Zone for The Application",
+  "specimenTypes.group.label" : "Specimen Types",
+  "specimenTypes.group.desc.label" : "Specimen Types",
+  "phoneMask.group.label":"Phone No. Masking",
+  "phoneMask.group.desc.label":"Phone No. Masking Configuration",
+  "phoneMask.key.label":"Masking String",
+  "appointment.group.label":"Appointment",
+  "appointment.group.desc.label":"Appointment Configuration",
+  "appointment.appointmentEditableBefore.key.label":"Appointment Editable Before (In Minutes)",
+  "appointment.slotDuration.key.label":"Appointment Slot Duration (In Days)",
+  "appointment.enabled.key.label":"Appointment Enabled ",
+  "appointment.permissableHcsRoles.key.label":"Permissible HCS Roles",
+  "appointment.showRescheduleFeatureInAppointment.key.label":"Show Reschedule Feature in Appointment ",
+  "appointment.showCancelFeatureInAppointment.key.label":"Show Cancel Feature in Appointment ",
+  "appointment.showStaticTextOnListPage.key.label":"Show Static Text",
+  "appointment.redirectPageAfterAppointmentSave.key.label":"Redirect Page After Appointment Save ",
+  "appointment.showSpecialityService.key.label":"Show Specialty Service",
+  "appointment.defaultRequestableRoleInHCS.key.label":"Default Requestable Role",
+  "appointment.defaultBookableRoleInHCS.key.label":"Default Bookable Role",
+  "workflow": {
+    "date":"Date",
+    "priority":"Priority",
+    "sender":"Sender",
+    "attachmentName":"Attachment Name",
+    "docRefID":"Document Reference Id",
+    "patientLinked":"Patient Linked",
+    "status":{
+      "all":"All",
+      "approved":"Approved",
+      "rejected":"Rejected"
+    },
+    "handleConsentRequest":{
+      "label":"Handle Consent Request",
+      "detailLabel":"Handle Consent Request"
+    },
+    "tasks":{
+      "list":{
+        "header":"Tasks",
+        "searchPlaceholderText":"Search Tasks."
+      },
+      "backButtonText":"Back To Task List.",
+      "myTasks":{
+        "header":"My Tasks"
+      },
+      "allTasks":{
+        "header":"All Tasks"
+      },
+      "queuedTasks":{
+        "header":"Task List"
+      },
+      "completedTasks":{
+        "header":"Completed Tasks"
+      }
+    },
+    "patientConsent": {
+      "startForm": {
+        "header": "Request Access",
+        "allowTill": "Access Required Till",
+        "reason": "Reason",
+        "comments": "Comments",
+        "successMessage": "Access request sent to patient.",
+        "errorMessage": "An error occurred. Please try again.",
+        "submitButtonText": "Submit",
+        "cancelButtonText": "Cancel",
+        "physicianName": "Physician",
+        "patientName": "For Patient"
+      },
+      "handleConsentRequest": {
+        "consentApproved": "Do you approve this request?",
+        "requestedDateLabel":"Requested Date",
+        "patientNameLabel":"Patient",
+        "requiredAccessTillLabel":"Access Available Till",
+        "processFormButton":"Process",
+        "claimTaskButton":"Claim"
+      },
+      "taskForms": {
+        "blankFieldError": "{{field}} can't be blank.",
+        "invalidFieldError": "Invalid value."
+      },
+      "fetchingResultText":"Fetching latest records....",
+      "refreshResultText":"Click here to refresh"
+    },
+    "salesAddUser":{
+      "opsAdminPermission":{
+        "adminAprooved":"Approve User",
+        "adminApproved": "Accept/Reject",
+        "comment": "Comment"
+      }
+    },
+    "AdminAcceptReject":{
+      "label":"Approve User Created by Sales Rep",
+      "detailLabel": "Approve User Created by Sales Rep",
+      "mobileLabel" : "Mobile",
+      "specialityLabel" : "Speciality",
+      "roleLabel" : "Role:",
+      "signUpDateLabel" : "Signed Up On",
+      "experienceLabel" : "Experience",
+      "remoteConsultationLabel":"Remote Consultation",
+      "inPersonConsultationLabel": "In-Person Consultation",
+      "addressLabel":"Clinical Address",
+      "noTasks" : "No Task Available.",
+      "loadingTasks" : "Loading...",
+      "signUpEndDateLabel" : "Task Completed On",
+      "statusLabel" : "Status"
+
+    },
+    "selfSignUpUserSalesRepPermissionAfterAdminAccepted":{
+      "label":"Approve Self Signed Up User",
+      "detailLabel": "Approve Self Signed Up User",
+      "mobileLabel" : "Mobile",
+      "specialityLabel" : "Speciality",
+      "roleLabel" : "Role",
+      "signUpDateLabel" : "Signed Up On",
+      "experienceLabel" : "Experience",
+      "remoteConsultationLabel":"Remote Consultation",
+      "inPersonConsultationLabel": "In-Person Consultation",
+      "addressLabel":"Clinical Address",
+      "noTasks" : "No Task Available.",
+      "loadingTasks" : "Loading..."
+    },
+    "selfSignUpUserOpsAdminPermissionAfterSalesRepVerification":{
+      "label":"Approve Self Signed Up User- Sales Cleared",
+      "detailLabel": "Approve Self Signed Up User- Sales Cleared",
+      "mobileLabel" : "Mobile",
+      "specialityLabel" : "Speciality",
+      "roleLabel" : "Role",
+      "signUpDateLabel" : "Signed Up On",
+      "experienceLabel" : "Experience",
+      "remoteConsultationLabel":"Remote Consultation",
+      "inPersonConsultationLabel": "In-Person Consultation",
+      "addressLabel":"Clinical Address",
+      "noTasks" : "No Task Available.",
+      "loadingTasks" : "Loading..."
+    },
+    "selfSignUpUserOpsAdminPermission":{
+      "label":"Approve Self Signed Up User",
+      "detailLabel": "Approve Self Signed Up User",
+      "mobileLabel" : "Mobile",
+      "specialityLabel" : "Speciality",
+      "roleLabel" : "Role",
+      "signUpDateLabel" : "Signed Up On",
+      "experienceLabel" : "Experience",
+      "remoteConsultationLabel":"Remote Consultation",
+      "inPersonConsultationLabel": "In-Person Consultation",
+      "addressLabel":"Clinical Address",
+      "noTasks" : "No Task Available",
+      "loadingTasks" : "Loading"
+
+    },
+    "selfSignUpAddUser":{
+      "opsAdminPermission":{
+        "adminAprooved":"Aproove User",
+        "adminApproved": "Accept/Reject",
+        "comment": "Comment"
+      },
+      "salesRepPermission":{
+        "salesApproved":"Accept/Reject",
+        "comment": "Comment"
+      },
+      "opsAdminPermissionAfterSales":{
+        "adminApproved":"Accept/Reject",
+        "comment":"Comment"
+      }
+    },
+    "sendToPacs":{
+      "pacsReviewerTask":{
+        "name":"Name",
+        "pacsDestination":"Destination",
+        "comments":"Comments",
+        "patientId":"Patient ID",
+        "patientBirthDate":"Patient DOB",
+        "accessionNumber":"Accession Number",
+        "studyIUID":"Study IUID",
+        "patientName":"Patient Name",
+        "studyDescription":"Description",
+        "modality":"Modality",
+        "patientSex":"Gender",
+        "destinations":"Destination"
+
+      },"pacsAdminTask":{
+        "name":"Name",
+        "pacsDestination":"Destination",
+        "comments":"Comments"
+      }
+    },
+    "mwlUploadedStudy":{
+      "label":"Send Uploaded Study",
+      "detailLabel":"Send Uploaded Study",
+      "taskDateLabel":"Task Date",
+      "statusHeaderText":"Status",
+      "selectedByReviewerText":"(Selected By Reviewer).",
+      "noAvailableDestinationText":"No Available Destination.",
+      "queryMwlHeader":"Query MWL",
+      "queryMwlForm":{
+        "firstNameLabel":"First Name",
+        "middleNameLabel":"Middle Name",
+        "lastNameLabel":"Last Name",
+        "queryButtonText":"Query",
+        "clearButtonText":"Clear"
+
+      },
+      "queryResultsHeader":"Query Results",
+      "sendToPacsButtonText":"Send",
+      "noMwlResultFoundText":"No Result Found.",
+      "mwlErrorMessage":"Error performing mwl query.",
+      "sendStudyErrorMessage":"Error occurred while sending study to the destination.",
+      "docReferenceErrorMessage":"Error occurred while fetching study information.",
+      "sendStudyConfirmBox":{
+        "closeButtonText": "Cancel",
+        "actionButtonText": "Proceed",
+        "headerText": "Complete Task?",
+        "bodyText": "The study is yet to be sent on some destinations selected by the reviewer. Do you want to complete this task?"
+      }
+    },
+    "sendUploadedStudy":{
+      "label":"Send Uploaded Study",
+      "detailLabel":"Send Uploaded Study"
+    },
+    "ReviewUploadedStudy":{
+      "label":"Review New Studies",
+      "detailLabel": "Review New Studies",
+      "patientNameLabel":"Patient Name",
+      "patientIdLabel":"ID",
+      "bornLabel":"Born",
+      "genderLabel":"Gender",
+      "uploadedByLabel":"Uploaded By",
+      "accessionNumberLabel":"Accession Number",
+      "modalityLabel":"Modality",
+      "studyLinkText":"Go to the study details page.",
+      "processFormButton":"Process",
+      "claimTaskButton":"Claim",
+      "studyIuidLabel":"Study IUID",
+      "form":{
+        "patientNameLabel":"Patient Name",
+        "patientIdLabel":"Patient ID",
+        "patientdobLabel":"Patient DOB",
+        "patientGenderLabel":"Gender",
+        "accessionNumberLabel":"Accession Number",
+        "modalityLabel":"Modality",
+        "destinationLabel":"Choose the PACS where the study should be sent.",
+        "studyIuidLabel":"Study IUID",
+        "commentsLabel":"Enter any comments for the PACS administrator.",
+        "descriptionLabel":"Description",
+        "studyDateLabel":"Study Date",
+        "error":{
+          "required":"This field can't be blank.",
+          "dateParse":"Invalid date"
+        },
+        "completeTaskButtonText":{
+          "ReviewUploadedStudy":"Send to Admin",
+          "sendUploadedStudy":"Send to PACS"
+        }
+      }
+    },
+    "fetchUploadsFromFisikeEmail": {
+      "label": "Approve uploads fetched from Fisike Email.",
+      "detailLabel": "Approve uploads fetched from Fisike Email.",
+      "mobileLabel": "Mobile",
+      "specialityLabel": "Speciality",
+      "roleLabel": "Role",
+      "signUpDateLabel": "Signed Up On",
+      "experienceLabel": "Experience",
+      "remoteConsultationLabel": "Remote Consultation",
+      "inPersonConsultationLabel": "In-Person Consultation",
+      "addressLabel": "Clinical Address",
+      "noTasks": "No Task Available",
+      "loadingTasks": "Loading...",
+      "opsAdminPermission": {
+        "adminAprooved": "Aproove User",
+        "adminApproved": "Accept/Reject",
+        "comment": "Comment"
+      }
+    },
+    "ReviewPatientResponse":{
+      "label":"Questionnaire Responses",
+      "responseErrorMessage":"Problem in loading patient responses.",
+      "bornLabel":"Born",
+      "genderLabel":"Gender",
+      "patientIDLabel":"Patient ID",
+      "sentOnLabel":"Sent On",
+      "sentByLabel":"Sent By",
+      "claimTaskButton":"Claim",
+      "processTaskButton":"Process",
+      "receivedLabel":"Received On",
+      "details":{
+        "heading":"Review Questionnaire Response",
+        "releaseButtonLabel":"Release",
+        "reassignButtonLabel":"Reassign",
+        "assignButtonLabel":"Assign",
+        "reassignSearchLabel":"Search User",
+        "reassignTextLabel":"Select User",
+        "assignLabel":"Assign To",
+        "responseLinkLabel":"View Responses and Files List"
+      },
+      "status":{
+        "new":"New",
+        "inProgress":"In Progress"
+      },
+      "commentsLabel":"Review Comments",
+      "completeButtonLabel":"Complete Review"
+    },
+    "HelpDeskAdmin":{
+      "label":"Help Desk",
+      "claimButtonLabel":"Claim",
+      "releaseButtonLabel":"Release",
+      "raisedFromText":"Raised By",
+      "queryStatusText":"Query Status",
+      "queryIDLabel":"Query ID",
+      "queryTypeLabel":"Query Type",
+      "categoryLabel":"Category",
+      "queryStatusLabel":"Query Status",
+      "assignToLabel":"Assign To",
+      "cancelButtonLabel":"Cancel",
+      "doneButtonLabel":"Done",
+      "replyButtonLabel":"Reply",
+      "subCategoryLabel":"Sub Category",
+      "dateLabel":"Date",
+      "defaultCategory":"Select Category",
+      "defaultSubCategory":"Select Info",
+      "userAssignPlaceholder":"No Assignee",
+      "querySuccessMsg":"Query Successfully Updated.",
+      "ticketIdLabel":"Ticket Id",
+      "queryLabel":"Query ",
+      "orderdateLabel":"Last Updated"
+    },
+    "CatagoriesAccess":{
+      "ReviewUploadedStudy":"N",
+      "mwlUploadedStudy":"N",
+      "sendUploadedStudy":"N",
+      "ReviewPatientResponse":"Y"
+    },
+    "HistoryCatagoriesAccess":{
+      "HelpDeskAdmin":"N",
+      "selfSignUpUserOpsAdminPermission":"Y",
+      "selfSignUpUserSalesRepPermissionAfterAdminAccepted":"Y",
+      "selfSignUpUserOpsAdminPermissionAfterSalesRepVerification":"Y",
+      "AdminAcceptReject":"Y"
+    },
+    "PaginationCatagoriesAccess":{
+      "HelpDeskAdmin":"Y"
+    }
+  },
+  "myTasks": {
+    "list": {
+      "header": "My Tasks",
+      "dueDateLabel": "Due Date",
+      "createdDateLabel": "Created On",
+      "priorityLabel": "Priority",
+      "formFillLabel": "Fill the form below and complete the task",
+      "completeFormButtonText": "Complete Task",
+      "noTaskFoundText": "No active task found.",
+      "fetchingTaskText": "Fetching Task Details.",
+      "noDueDateText": "No due date.",
+      "completeTaskSuccessMessage": "Task has been completed.",
+      "claimOrAssignTaskSuccessMessage":"Task has been claimed or assigned.",
+      "completeTaskErrorMessage": "There was an error. Please try again.",
+      "claimTaskErrorMessage":"Task has been assigned to someone else.",
+      "releaseTaskErrorMessage":"Problem in releasing task.",
+      "claimTaskLabel": "Claim Task",
+      "processLabel": "Process"
+
+    }
+  },
+  "queuedTasks":{
+    "list":{
+      "header":"Queued Tasks",
+      "dueDateLabel":"Due Date",
+      "createdDateLabel":"Created On",
+      "priorityLabel":"Priority",
+      "noTaskFoundText":"No active tasks found.",
+      "noDueDateText":"No due date.",
+      "assignedTaskSuccessMessage":"Task has been assigned.",
+      "assignedTaskErrorMessage":"There was an error. Please try again."
+    }
+  },
+  "manageConsent":{
+    "list":{
+      "header":"Manage Consent",
+      "advanceSearch":{
+        "keywordPlaceHolder":"Search",
+        "searchButtonText":"Search"
+      },
+      "revokeAccess": {
+        "successMessage": "The access for this user has been revoked.",
+        "errorMessage": "Couldn't revoke the user. Try again later."
+      },
+      "patientNameLabel": "Patient",
+      "physicianNameLabel": "Physician",
+      "reasonLabel": "Reason",
+      "startDateLabel": "Start Date",
+      "endDateLabel": "End Date",
+      "statusLabel": "Status",
+      "actionsLabel": "Actions",
+      "status": {
+        "REQUESTED": "Requested",
+        "APPROVED": "Approved",
+        "DECLINED": "Declined",
+        "REVOKED": "Revoked",
+        "EXPIRED":"Expired"
+      },
+      "noResultFoundText": "No results found.",
+      "loadingText": "Loading..."
+    },
+    "searchCriteria": {
+      "keywordSearch": "Keyword",
+      "clearCriteriaButton": "Clear"
+    }
+  },
+  "testCompendium":{
+    "departments.group.label":"Test Departments",
+    "departments.group.desc.label": "Test Department Names",
+    "departments.key.desc.label" : "Test Department Name",
+    "departmentList.key.label" : "Test Department",
+    "globalSettings.group.label" : "Global Test Compendium Settings",
+    "globalSettings.group.desc.label" : "Global Test Compendium Settings",
+    "globalSettings.globalHeaderPage.label" : "Global Page Header",
+    "globalSettings.globalFooterPage.label" : "Global Page Footer",
+    "globalSettings.batteryTestComponent.label" : "Battery Test Component",
+    "globalSettings.historyValue.label" : "History Value",
+    "globalSettings.patientReportDelay.label" : "Delay(in hours) in showing the report to the patient (Maximum value: 876000).",
+    "globalSettings.supportFormattedReports.label" : "Allow Formatted Reports",
+    "systems.group.label" : "Test Systems",
+    "systems.group.desc.label": "Test System Names",
+    "systems.key.desc.label" : "Test System Name"
+  },
+  "testInfoSettings" : {
+    "group.label" : "Test info settings",
+    "group.desc.label" : "Test info settings",
+    "infoEnabled.label" : "Test information enabled"
+  },
+  "breakTheGlass": {
+    "reasons.group.label":"Break The Glass - Reasons",
+    "reasons.group.desc.label":"Break The Glass Feature",
+    "group.label":"Break The Glass - Expiry Time",
+    "group.desc.label": "Break The Glass Feature",
+    "reasonList.key.label": "Reason List",
+    "btnLableText": "Allow Access",
+    "cancelLableText": "Cancel",
+    "headerText": "Break The Glass",
+    "commentBoxPlaceholder": "Description",
+    "errorTextForReason": "Select a Reason",
+    "dialogBoxText": "You are about to request unrestricted access to the system for clinical data. This should only be done in case of medical necessity when no other option is available to you. All access will be logged and reviewed. To proceed, please select the reason and your description.",
+    "successfullAccessMessage": "You are now in BREAK THE GLASS.",
+    "accessFailureMessage": "Break the Glass access can not be used right now.",
+    "reasonSelectOption": "Select Reason for Access",
+    "key":{
+      "label":"Break The Glass"
+    }
+  },
+  "widget": {
+    "phrWidget":{
+      "sourceSelfTextForPhysician":"Patient Reported",
+      "BMI":"Height & Weight",
+      "Blood Pressure":"Blood Pressure",
+      "Glucose":"Glucose",
+      "Heart Rate":"Heart Rate",
+      "Temperature":"Temperature",
+      "Respiration Rate":"Respiration Rate"
+    },
+    "condition": {
+      "problemsAndConditions": "Problem And Condition",
+      "name": "Name",
+      "onset": "Period",
+      "severity": "Severity",
+      "location": "Location"
+    },
+    "allergy": {
+      "allergies": "Allergies"
+    },
+    "medication": {
+      "medications": "Medications"
+    }
+  },
+  "relationshipTypes": {
+    "value": {
+      "U": "Unmarried",
+      "A": "Annulled",
+      "D": "Divorced",
+      "I": "Interlocutory",
+      "L": "Legally Separated",
+      "M": "Married",
+      "P": "Polygamous",
+      "S": "Never Married",
+      "T": "Domestic partner",
+      "W": "Widowed"
+    }
+  },
+  "emergencyContactRelationshipTypes": {
+    "value": {
+      "family": "Family",
+      "guardian": "Guardian",
+      "friend": "Friend",
+      "partner": "Partner",
+      "caregiver": "Caregiver",
+      "agent": "Agent",
+      "guarantor": "Guarantor",
+      "owner": "Owner",
+      "parent": "Parent"
+    }
+  },
+  "useCodeForContact": {
+    "value": {
+      "Mobile": "Mobile",
+      "Work Phone": "Work Phone",
+      "Home Phone": "Home Phone"
+    }
+  },
+  "genderTypes": {
+    "value": {
+      "M": "Male",
+      "F": "Female",
+      "O": "Other"
+    }
+  },
+  "useCodeForAddress": {
+    "value": {
+      "Work Address": "Work Address",
+      "Home Address": "Home Address"
+    }
+  },
+  "xds": {
+    "xdsErrorLog": {
+      "requestType.label": "Request Type",
+      "requestStatus.label": "Request Status",
+      "errorMsgs.label": "Error Msg",
+      "modelData.label": "Data/Model",
+      "system.label": "System",
+      "action.label": "Action",
+      "action.button.label": "Retry",
+      "noResultFoundText": "No results found."
+
+    }
+  },
+  "httpErrors": {
+    "408": "Timeout",
+    "0": "Connection Error.",
+    "500": "Server Error.",
+    "404": "Not Found.",
+    "561": "Unable to process your request. Too many records found. Please refine your search.",
+    "423":"Enabled physician user with same phone number already exists.",
+    "424":"Enabled physician user with same phone number already exists.",
+    "425":"Enabled physician user with same phone number already exists.",
+    "426":"Physician user with same phone number is already pending for approval."
+  },
+  "BTG": {
+    "emergency": "Emergency access for providing healthcare services",
+    "necessary": "Medically necessary for non-urgent patient care",
+    "verbal": "Obtained verbal patient consent"
+  },
+  "triggerManager": {
+    "triggerListLabel": "Triggers",
+    "createTriggerButtonText": "Create Trigger",
+    "noTriggersFound": "No Triggers Found",
+    "openNotificationManagerButtonText": "Notification Template Manager",
+    "openNotificationSenderManagerText": "Notification Sender Manager",
+    "loadingTriggers": "Loading Triggers...",
+    "tableHeader": {
+      "name": "Name",
+      "description": "Description",
+      "resource": "Resource",
+      "type": "Type",
+      "enabled": "Enabled"
+    },
+    "edit": {
+      "createNewTriggerLabel": "Create New Trigger",
+      "configureTriggerLabel": "Configure Trigger",
+      "editTriggerLabel": "Edit",
+      "statusLabel": "Enabled",
+      "triggerNameLabel": "Name",
+      "triggerDescriptionLabel": "Description",
+      "triggerTypeLabel": "Type",
+      "triggerResourceLabel": "Resource",
+      "triggerTypePlaceHolder": "Create",
+      "triggerResourcePlaceHolder": "Resource",
+      "triggerConditionPlaceHolder": "Put the Condition Code here.",
+      "triggerActionPlaceHolder": "Put the Action Code here.",
+      "SaveBtnLabel": "Save",
+      "successfullySavedMessage": "Trigger Saved!",
+      "errorSavingMessage": "Error! Save Trigger again.",
+      "triggerActionLabel": "Action",
+      "triggerConditionLabel": "Condition",
+      "successfullyDeletedMessage": "Trigger Deleted Successfully.",
+      "errorDeletingMessage": "Error! Delete Trigger again.",
+      "confirmDialogDelete": "Are you sure you want to delete this trigger?",
+      "DeleteBtnLabel": "Delete"
+    }
+  },
+  "notificationSenderManager":{
+    "createButtonText": "Create Notification Sender",
+    "listLabel": "Notification Senders",
+    "loadingItemsText": "Loading... Please Wait",
+    "noItemsFound": "No Senders Defined",
+    "createNotificationSender": "Create Notification Sender",
+    "editNotificationSender": "Edit Notification Sender",
+    "tableHeader": {
+      "id": "Id",
+      "name": "Name",
+      "description": "Description",
+      "email": "Email"
+    },
+    "edit": {
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "descriptionLabel": "Description",
+      "SaveBtnLabel": "Save",
+      "DeleteBtnLabel": "Delete",
+      "confirmDialogDelete":"Are you sure you want to delete this notification sender?",
+      "successfullySavedMessage": "The Notification Sender has been saved successfully.",
+      "successfullyDeletedMessage": "The Notification Sender has been deleted successfully.",
+      "errorDeletingMessage": "Error! Delete Notification Sender again.",
+      "errorSavingMessage": "Error! Save Notification Sender again."
+    }
+  },
+
+  "BTG":{
+    "emergency":"Emergency access for providing healthcare services",
+    "necessary":"Medically necessary for non-urgent patient care",
+    "verbal":"Obtained verbal patient consent"
+  },
+  "documentDigitization":{
+    "tableHeader":{
+      "patientName" : "Patients",
+      "dateTime" : "Upload Date/Time",
+      "tags": "Tags",
+      "documents": "Documents",
+      "proceedAs": "Proceed As",
+      "reject": "Reject"
+    },
+    "successMessageOnSave":"Successfully saved.",
+    "failureMessageOnSave":"Some error occurred.",
+    "faliureMessageOnPracSave": "Some error occurred in saving practitioner.",
+    "faliureMessgaeOnEncounterSave": "Some error occurred in saving encounter.",
+    "faliureMessgaeOnPrescSave": "Some error occurred in saving medication prescription.",
+    "faliureMessgaeOnDocRefShow": "Some error occurred in fetching document reference details.",
+    "faliureMessgaeOnDocRefSave": "Some error occurred in updating document reference.",
+    "documentCancelledOnDocRefCancel": "Document cancelled successfully.",
+    "failureMsgOnDocRefCancel": "Some error occurred while cancelling document reference.",
+    "confirmMsgOnDocRefCancel": "This document will be cancelled permanently. Do you want to proceed?",
+    "failureMsgOnSavingObservations":"Some error occurred while updating observations",
+    "prescriptionAndTestRptInvalid":"Some fields are invalid/required",
+    "prescSavedTestError": "Prescription saved successfully but some error occurred while saving Test Report",
+    "testSavedPrescError": "Test Report saved successfully but some error occurred while saving Prescription",
+    "prescErrorTestError": "Some error occurred while saving Prescription and Test Report",
+    "testReportSaveError": "Some error occurred while saving Test Report",
+    "formEmpty":"At least one Test Report or Prescription is necessary for document digitization",
+    "previewFailure": "All mandatory fields should be filled correctly before preview",
+    "docRefAlreadyDigitized":"This document has been already digitized",
+    "docChannel":"Channel",
+    "docDoctor":"Doctor",
+    "docHospital":"Hospital",
+    "docLab":"Lab",
+    "docSource":"Source",
+    "docDefaultSource":"Select source",
+    "docPrimarySourceError":"Primary source is mandatory",
+    "docPrescribingDocSourceError":"Prescribing doctor is mandatory",
+    "docPerformingHospError":"Hospital is mandatory",
+    "docPerformingLabError":"Lab is mandatory",
+    "docPrescribingDoctorSavedSuccessfully":"Practitioner saved successfully",
+    "searchOrAddHospital":"Search/Add Hospital",
+    "searchOrAddLab":"Search/Add Lab",
+    "addNewLab":"Add new lab",
+    "addNewHospital":"Add new hospital",
+    "name":"Name:",
+    "phoneNumber":"Phone No:",
+    "address":"Address",
+    "hospitalSavedSuccessfully":"Hospital saved successfully",
+    "labSavedSuccessfully":"Lab saved successfully",
+    "faliureMessageOnHospitalSave":"Some error occurred while saving hospital",
+    "faliureMessageOnLabSave":"Some error occurred while saving lab",
+    "organizationNameRequired":"Name is mandatory",
+    "organizationAddressRequired":"Address is mandatory"
+  },
+  "opsadmin":{
+    "addEditDoctor":{
+      "profilePicFailure": "Some error occurred while saving profile picture.",
+      "informationLabel":"Add Doctor's Info",
+      "uploadPictureLabel":"Upload Picture",
+      "firstNameLabel":"First Name",
+      "lastNameLabel": "Last Name",
+      "usernameLabel": "Username",
+      "passwordLabel": "Password",
+      "mobileNoLabel" : "Mobile",
+      "emailLabel" : "Email",
+      "submitButtonLabel" : "Submit",
+      "resetButtonLabel" : "Reset",
+      "uploadPictureLabel" : "Upload Picture",
+      "userCreated" : "User Created Successfully.",
+      "errorSavingPhysicianUser" : "Error encountered while saving the user.",
+      "userDetailsNotUnique" : "User details aren't unique.",
+      "DOBLabel" : "DOB:",
+      "roleLabel" : "Role",
+      "genderLabel" : "Gender",
+      "specialityLabel": "Speciality",
+      "addressLabel": "Address",
+      "noOfExpLabel": "Experience",
+      "roleList": {
+        "Specialist":"Specialist",
+        "Doctor":"Doctor",
+        "JuniorDoctor":"Junior Doctor",
+        "Nurse":"Nurse"
+      },
+      "physicianSpecialityList" : {
+        "ALLERGY`IMMUNOLOGY" :"Allergy/Immunology",
+        "ANESTHESIOLOGY" : "Anesthesiology",
+        "CARDIOLOGY" : "Cardiology",
+        "DERMATOLOGY" : "Dermatology",
+        "ENDOCRINOLOGY`DIABETES`METABOLISM" : "Endocrinology/Diabetes/Metabolism",
+        "EMERGENCY MEDICINE" : "Emergency Medicine",
+        "FAMILY`GENERAL PRACTICE" : "Family/General Practice",
+        "GERIATRICS" : "Geriatrics",
+        "INTERNAL MEDICINE" : "Internal Medicine",
+        "MEDICAL GENETICS" :"Medical Genetics" ,
+        "NEUROLOGICAL SURGERY" : "Neurological Surgery" ,
+        "NEUROLOGY" : "Neurology",
+        "OBSTETRICS`GYNECOLOGY" : "Obstetrics/Gynecology",
+        "ONCOLOGY (CANCER)" : "Oncology (Cancer)" ,
+        "OPHTHALMOLOGY" : "Opthalmology",
+        "ORTHOPEDICS" : "Orthopedics",
+        "OTOLARYNGOLOGY" : "Otolaryngology",
+        "PATHOLOGY" : "Pathology",
+        "PEDIATRICS" : "Pediatrics",
+        "PHYSICAL MEDICINE & REHAB" : "Physical Medicine & Rehab",
+        "PLASTIC SURGERY" : "Plastic Surgery",
+        "PREVENTIVE MEDICINE" : "Preventive Medicine",
+        "PSYCHIATRY" : "Psychiatry",
+        "RADIOLOGY" : "Radiology",
+        "SURGERY" : "Surgery",
+        "UROLOGY" : "Urology",
+        "OTHER" : "Other"
+      },
+      "errorText":{
+        "firstNameRequired" : "First name can't be empty.",
+        "lastNameRequired" : "Last name can't be empty.",
+        "usernameRequired" : "Username can't be empty.",
+        "passwordRequired" : "Password can't be empty.",
+        "roleRequired" : "Role can't be empty.",
+        "mobileRequired" : "Mobile number can't be empty.",
+        "emailRequired" : "Email can't be empty.",
+        "incorrectEmailFormat" : "Please enter the email in the correct format (aa@bb.com).",
+        "incorrectMobileNumberLength" : "Mobile number should be of 10 digits.",
+        "incorrectMobileNumberPattern" : "Mobile number contains only digits.",
+        "specialityRequired" : "Speciality can't be empty.",
+        "addressRequired" : "Address can't be empty.",
+        "noOfExpRequired" : "Experience can't be empty.",
+        "genderRequired" : "Gender can't be Empty.",
+        "incorrectPasswordLength": "Password must be of minimum 6 digits."
+      }
+    },
+    "labIntegration":{
+      "labNameRequired": "Lab Name can't be empty.",
+      "labAddressRequired": "Address can't be empty.",
+      "labLocalityRequired": "Locality can't be empty.",
+      "labCountryRequired": "Country can't be empty.",
+      "labStateRequired": "State can't be empty.",
+      "labCityRequired": "City can't be empty.",
+      "labStylingTemplateRequired": "Styling Template can't be empty.",
+      "branchLocalityRequired": "Branch Locality can't be empty.",
+      "branchAddressRequired": "Branch Address can't be empty.",
+      "branchCountryRequired": "Branch Country can't be empty.",
+      "branchStateRequired": "Branch State can't be empty.",
+      "branchCityRequired": "Branch City can't be empty.",
+      "branchHomeCollectionRequired": "Branch Home Collection can't be empty.",
+      "fromTimeError": "Incorrect Time.",
+      "labLogoRequired": "Incorrect Time."
+    }
+  },
+
+  "notifTemplateManager":{
+    "createButtonText": "Create Notification Template",
+    "listLabel": "Notification Templates",
+    "loadingItemsText": "Loading... Please Wait",
+    "noItemsFound": "No Templates Defined",
+    "tableHeader": {
+      "id": "Id",
+      "name": "Name",
+      "description": "Description"
+    },
+    "edit": {
+      "nameLabel": "Name",
+      "emailLabel": "Email",
+      "descriptionLabel": "Description",
+      "templateCodeLabel": "Template Code",
+      "SaveBtnLabel": "Save",
+      "DeleteBtnLabel": "Delete",
+      "confirmDialogDelete":"Are you sure you want to delete this notification sender?",
+      "successfullySavedMessage": "The Notification Template has been saved successfully.",
+      "successfullyDeletedMessage": "The Notification Template has been deleted successfully.",
+      "errorDeletingMessage": "Error! Delete Notification Template again.",
+      "errorSavingMessage": "Error! Save Notification Template again."
+    }
+  },
+  "notification":{
+    "label":"Notifications",
+    "viewAllNotifications":"View All Notifications",
+    "justNow":"just now",
+    "minutesAgo":"minutes ago",
+    "hoursAgo":"hours ago",
+    "hourAgo":"hour ago",
+    "at":"at",
+    "markRead":"Mark as Read",
+    "noNotificationLabel":"No Notification"
+  },
+  "dischargeSummary" :{
+    "incompleteDischargeSummary" :"Please complete all mandatory fields.",
+    "action":{
+      "download":"Download",
+      "print":"Print",
+      "complete":"Complete",
+      "edit":"Edit"
+    },
+    "modal":{
+      "title":"Complete Discharge Summary",
+      "note":"You are about to complete a discharge summary for the following encounter",
+      "admittedTo":"Admitted to",
+      "on":"On",
+      "dischargedOn":"Discharged on",
+      "by":"by",
+      "complete":"Complete",
+      "cancel":"Cancel"
+    },
+    "header":{
+      "text" :"Create Discharge Summary",
+      "createDischargeSummary" :"Create Discharge Summary",
+      "dischargeSummary" :"Discharge Summary",
+      "completeDischargeSummary" :"Complete Discharge Summary",
+      "downloadDischargeSummary" :"View Discharge Summary"
+    },
+    "subheadings":{
+      "patientDemographics":{
+        "header":"Patient Demographics",
+        "details":{
+          "name":"Name",
+          "id":"ID",
+          "born":"Born",
+          "gender":"Gender",
+          "phone":"Phone No.",
+          "address":"Address"
+        }
+      },
+      "admissionDetails":{
+        "header":"Admission Details",
+        "details":{
+          "method":"Admission Method",
+          "source":"Source of Admission",
+          "patLocation":"Patient Location",
+          "adminDateTime":"Admin Date & Time"
+        }
+      },
+      "gpPractice":{
+        "header":"GP Practice",
+        "details":{
+          "careProvider":"CareProvider Name",
+          "careProviderIdentifier":"CareProvider Identifier",
+          "careProviderAddress":"CareProvider Address"
+        }
+      },
+      "dischargeDetails":{
+        "header":"Discharge Details",
+        "details":{
+          "dischargeBy":"Discharge By",
+          "dischargeSpeciality":"Discharge Speciality",
+          "dischargeDate":"Discharge Date",
+          "dischargeMethod":"Discharge Method",
+          "dischargeDestination":"Discharge Destination",
+          "dischargeAddress":"Discharge Address"
+        }
+      },
+      "referralDetails":{
+        "header":"Referral Details"
+      },
+      "socialContext":{
+        "header":"Social Context"
+      },
+      "socialRequirements":{
+        "header":"Social Requirements"
+      },
+      "allergiesandAdverseReactions":{
+        "header":"Allergies and Adverse Reactions"
+      },
+      "reasonForAdmission":{
+        "header":"Reason for Admission"
+      },
+      "clinicalSummary":{
+        "header":"Clinical Summary "
+      },
+      "Procedures":{
+        "header":"Procedures"
+      },
+      "Diagnosis":{
+        "header":"Diagnosis"
+      },
+      "medicationAndDosages":{
+        "header":"Medication and Dosages",
+        "addMedicine":"Add Medicine",
+        "subdetails":{
+          "Medication":"Medication",
+          "Dosage":"Dosage",
+          "Status":"Status",
+          "Comments":"Comments"
+        }
+      },
+      "planAndRequestedActions":{
+        "header":"Plan and Requested Actions"
+      },
+      "informationGiven":{
+        "header":"Information Given"
+      },
+      "legalInformation" :{
+        "header":"Legal Information"
+      },
+      "safetyAlerts":{
+        "header":"Safety Alerts"
+      },
+      "patientCarerConcerns":{
+        "header":"Patient and Carer Concerns"
+      },
+      "distributionList":{
+        "header":"Distribution List",
+        "details":{
+          "hospitalNotes":"Hospital Notes",
+          "GP":"GP",
+          "Patient":"Patient"
+        }
+      },
+      "practitionerDetails":{
+        "header":"Person Completing Records",
+        "details":{
+          "doctorName":"Doctor Name",
+          "doctorSpeciality":"Doctor Speciality",
+          "date":"Date"
+        }
+      }
+    }
+  },
+  "careGroup":{
+    "createGroup.buttonText":"Create Group",
+    "createGroup.requiredErrorText":"Group",
+    "list":{
+      "header":"Care Group",
+      "groupNametableHeaderText":"Groups",
+      "memberTableHeaderText":"Group Members",
+      "actionHeaderText":"Action"
+    },
+    "search":{
+      "searchBoxPlaceHolder":"Enter group name to search",
+      "buttonText":"Search"
+    },
+    "noResultFoundText":"No Result Found.",
+    "loadingText":"Loading...",
+    "details":{
+      "headerText":"Care Group: The Diagnosticians",
+      "editNamePlaceHolder":"Enter group name",
+      "dateLabel":"Created On",
+      "memberCountLabel":"Members",
+      "memberHeaderText":"Members",
+      "namePrefixText":"Dr. ",
+      "subTitleText":"Physician",
+      "userSerachPlaceholder":"Select user to add in group.",
+      "remove":"Remove"
+
+    },
+    "create":{
+      "createFormTitle":"Create Care Group",
+      "groupNameErrorText":"Already exists.",
+      "imageTitle":"Group Image",
+      "groupNameLabel":"Group Name",
+      "createGroupButtonText":"Create Group"
+    }
+  },
+  "citadel":{
+    "auth":{
+      "btg":{
+        "token":{
+          "expiry":{
+            "key":{
+              "label":"BTG Expiry Time (In Seconds)"
+            }
+          }
+        }
+      }
+    }
+  },
+  "sendToPacsDestinations":{
+    "group":{
+      "desc":{
+        "label":"Send To Pacs Destinations"
+      },
+      "label":"Send To Pacs Destinations"
+    },
+    "key":{
+      "desc":{
+        "label":"Send To Pacs Destinations"
+      },
+      "label":"Send To Pacs Destinations"
+    }
+  },
+  "reportingEngine":{
+    "headerPage":{
+      "uhidLabel" : "UHID",
+      "nameLabel" : "Name",
+      "genderLabel" : "Gender",
+      "bloodGroupLabel" : "Blood Group",
+      "doctorLabel" : "Doctor",
+      "ageLabel" : "Age",
+      "orderDateLabel" : "Date",
+      "departmentDetailsLabel" : "Department of Laboratory Medicine"
+    },
+    "footerPage":{
+      "printedByLabel" : "Printed By",
+      "onLabel" : "On",
+      "autoMessageLabel" : "This is a computer generated report. Signature is not required.",
+      "hotLineLabel" : "24X7 hot-line: +91(124)4141414",
+      "emergencyLabel" : "Emergency: 01241068",
+      "emailLabel" : "Email: info@medanta.org",
+      "websiteLabel" : "www.medanta.org",
+      "addressLabelOne" : "Medanta, The medicity: Sector 38, Gurgaon, Harayana, 122001, India.",
+      "addressLabelTwo" : "Medanta, The mediclinic: E-18 Defence colony , New Delhi, 110024, India."
+    },
+    "batteryTest":{
+      "testNameLabel" : "Test Name",
+      "valueLabel" : "Your Value",
+      "referenceLabel" : "Reference Range",
+      "abnormalLabel" : "Abnormal",
+      "normalLabel" : "Normal",
+      "borderlineLabel" : "Borderline",
+      "colourIndicatorLabel" : "Colours Indicate",
+      "valueIndicatorLabel" : "Your Value",
+      "referenceLabel" : "Reference",
+      "criticalLimitBreachIndicatorLabel" : "Value Breaching Critical Limit"
+    },
+    "availableReportCategories":{
+      "Lab":"Lab",
+      "Rad":"Rad",
+      "selectCategoryText":"Please Select"
+    },
+    "testDepartments":{
+      "selectTestDepartmentText" : "Please Select"
+    },
+    "component":{
+      "sizes":{
+        "Table":{
+          "sizeX":"12",
+          "sizeY":"3"
+        },
+        "Two-column-side-by-side-table":{
+          "sizeX":"12",
+          "sizeY":"3"
+        },
+        "Three-column-side-by-side-table":{
+          "sizeX":"12",
+          "sizeY":"3"
+        },
+        "Chart":{
+          "sizeX":"6",
+          "sizeY":"3"
+        },"Text":{
+          "sizeX":"12",
+          "sizeY":"3"
+        },"FormattedText":{
+          "sizeX":"12",
+          "sizeY":"3"
+        }
+      }
+    },
+    "listing": {
+      "titleLabel" : "Compendium Listings",
+      "importButtonLabel" : "Import Compendium CSV",
+      "importParameterLabel" : "Import Parameter CSV",
+      "addTestLabel" : "Add Test",
+      "searchButtonLabel" : "Search",
+      "testNameLabel" : "Test",
+      "testIdLabel" : "Id",
+      "parametersLabel" : "Parameters",
+      "dateAddedLabel" : "Last Modified Date",
+      "actionsLabel" : "Actions",
+      "actionButtons" : {
+        "detailsButtonLabel" : "Details",
+        "previewButtonLabel" : "Report Preview",
+        "formatButtonLabel" : "Report Format",
+        "settingsButtonLabel" : "Settings",
+        "deleteButtonLabel" : "Delete"
+      },
+      "keywordLabel" : "Keyword",
+      "noResultFoundLabel" : "No Result Found",
+      "loadingLabel" : "Loading...",
+      "errors" :{
+        "fileTypeWrong" : "File selected is not a csv file."
+      }
+    },
+    "reportFormat" : {
+      "titleLabel" : "Report Format",
+      "saveButtonLabel" : "Save",
+      "publishButtonLabel" : "Publish",
+      "componentListLabel" : "Components",
+      "parameterListLabel" : "Parameters",
+      "reportFormatModifiedSuccessMsg" : "Report format successfully changed.",
+      "reportFormatPublishedSuccessMsg" :"Report format successfully published."
+    },
+    "settings" : {
+      "titleLabel" : "Settings",
+      "testNameLabel" : "Test Name",
+      "testIdLabel" : "Test Id",
+      "patientVisibilityLabel" : "Visible To Patient",
+      "numberOfRecordsLabel" : "How many records do you want to show?",
+      "reportHeaderLabel" : "Report Header",
+      "reportFooterLabel" : "Report Footer",
+      "editSettingsSuccessMsg" : "Settings edited successfully.",
+      "editSettingsErrorMsg" : "Error in editing settings.",
+      "checkboxFalseLabel" : "False",
+      "checkboxTrueLabel" : "True",
+      "submitButtonLabel" : "Submit",
+      "cancelButtonLabel" : "Cancel",
+      "delayLabel":"Report Delay for Patient (In Hours).",
+      "maxDelayError":"Maximum Value: 876000"
+    },
+    "details" : {
+      "titleLabel" : "Test Details",
+      "testNameLabel" : "Test Name",
+      "testSystemLabel" : "Test System",
+      "testIdLabel" : "Test Id",
+      "settingsButtonLabel" : "Settings",
+      "previewButtonLabel" : "Preview Report",
+      "formatButtonLabel" : "Format Report",
+      "parametersTitleLabel" : "Parameters",
+      "parameterNameLabel" : "Parameter Name (ID)",
+      "unavailableLabel" : "Unavailable",
+      "unitLabel" : "Unit",
+      "referenceRangeLabel" : "Reference Range"
+    },
+    "createTest" : {
+      "titleLabel" : "Create Test",
+      "testNameLabel" : "Test Name",
+      "testIdLabel" : "Test Id",
+      "parametersLabel" : "Parameters",
+      "fullNameLabel" : "Full Name",
+      "categoryLabel" : "Category",
+      "referenceRangeLabel" : "Reference Range",
+      "unitLabel" : "Unit",
+      "addMoreParametersLabel" : "Add More parameters",
+      "testCreatedSuccessMsg" : "Test successfully created.",
+      "testCreatedErrorMsg" : "Error in creating test.",
+      "nameLabel" : "Name",
+      "minLabel" : "Min",
+      "maxLabel" : "Max",
+      "submitButtonLabel" : "Submit",
+      "resetButtonLabel" : "Reset",
+      "removeTitleLabel" : "Remove",
+      "systemLabel" : "System",
+      "systemCodeLabel" : "Test Code",
+      "systemAndTestCodeError": "Test code already exists. Kindly provide the unique test code.",
+      "departmentLabel" : "Department",
+      "alternateTestLabel" : "Alternate names for test (Must be a comma separated string)",
+      "descriptionLabel" : "Test Description",
+      "errorText":{
+        "blankNameError":"Name of the test can't be blank.",
+        "blankCategoryError":"Category of the test can't be blank.",
+        "blankTestIdError":"Test ID can't be blank.",
+        "blankDepartmentError" : "Test department can't be empty.",
+        "blankFullNameError" : "Full name can't be blank."
+      }
+    },
+    "parameterModal" : {
+      "submitButtonLabel" : "Submit",
+      "removeParameterLabel" : "Remove parameter",
+      "titleLabel" : "Add Parameters",
+      "addParameterLabel" : "Add Parameter",
+      "placeHolderLabel" : "Type a keyword to search",
+      "selectParametersLabel" : "Please Select Parameters",
+      "chartComponentLabel" : "(parameters should have same units)",
+      "historyValueLabel" : "Please Enter The Number of History Values",
+      "tableTitleLabel" : "Please Enter The Table Title",
+      "maxValueLabel" : "Maximum Tables",
+      "numberOfTablesLabel" : "Number of Tables",
+      "error" : {
+        "duplicateParameterLabel" : "Duplicate parameter",
+        "parameterEmptyLabel" : "Parameter can't be empty",
+        "differentUnitsLabel" : "Parameter may have different units than one of the other selected parameters",
+        "historyValueIncorrectLabel" : "Please enter a valid history number value",
+        "numberOfTablesIncorrectLabel" : "Number of tables incorrect"
+      }
+    },
+    "valueRanges" : {
+      "high" : "High",
+      "low" : "Low",
+      "normal" : "Normal",
+      "abnormal" :"Abnormal"
+    },
+    "twoColumnSideBySideTableHeadings" : {
+      "parameterLabel" : "Parameter",
+      "resultLabel" : "Result"
+    },
+    "threeColumnSideBySideTableHeadings" : {
+      "parameterLabel" : "Parameter",
+      "resultLabel" : "Result",
+      "referenceLabel" : "Reference"
+    }
+  },
+  "downloadDicom": {
+    "downloadBoxHeaderTextForDownloadPreparing": "Preparing Download",
+    "downloadBoxHeaderTextForDownloadReady":"Download Ready",
+    "pendingStatusText": "Collecting files.",
+    "processingStatusText": "Zipping {{numberOfFileToDownload}} files.",
+    "processedStatusText": "Zip file is ready to download.",
+    "failRetringStatusText": "Some error has occurred. Retrying...",
+    "failedStatusText":"Download Failed.",
+    "confirmMessageTextForSingle": "Your download is incomplete. Would you like to cancel download?",
+    "confirmMessageTextForAll": "Your download is incomplete. Would you like to cancel all download?",
+    "okBtnText": "Cancel Downlaod",
+    "cancelBtnText": "Continue Downlaod",
+    "requestGeneratedSuccessText":"Request has been generated successfully.",
+    "duplicateRequestGeneratedText":"Request for this order is already initiated.",
+    "requestGeneratedFailureText":"Some error occurred."
+  },
+  "aboutUs":{
+    "aboutUsLabel": "About Us",
+    "productName": "MphRx Minerva Portal",
+    "productVersion": "2.2.2",
+    "manufacturerLabel": "Manufacturer",
+    "manufacturerName": "MphRx Inc",
+    "manufacturerAddress": "400 Park Ave, New York, NY 10022, USA",
+    "manufacturerURL": "www.mphrx.com",
+    "distributorLabel": "Distributor",
+    "distributorName": "MphRx Inc",
+    "distributorAddress": "400 Park Ave, New York, NY 10022, USA",
+    "distributorURL": "www.mphrx.com",
+    "installedComponentsLabel":"Installed Components",
+    "installedComponentsDetail":"Minerva Apps 2.2.2, Activiti 2.2.2, Webconnect 2.2.2, Consus 2.2.2, DICR 2.2.2, dcm2jpg dcm4che-2.0.25, dcmdump, gdcmconv, dcmj2pnm, ffmpeg,  HandBrakeCLI, ffmpeg2theora, ffmpeg, Video Context in Tomcat 2.0.0, dcm4chee, XDS 2.2.2, MongoDB, MySQL"
+  },
+  "observationWidget":{
+    "dateLabel":"Date",
+    "timeLabel":"Time",
+    "numberValidationError":"Accept only numbers.",
+    "numberLimitError":"Accept only numbers 1 to 12",
+    "resetButtonLabel":"Reset",
+    "saveButtonLabel":"Save",
+    "cancelButtonLabel":"Cancel",
+    "unitLabel":"Unit",
+    "widgetNameLabel":{
+      "BMI":"BMI",
+      "Height":"Height",
+      "Weight":"Weight",
+      "Blood Pressure":"Blood Pressure",
+      "Systolic":"Systolic",
+      "Diastolic":"Diastolic",
+      "Glucose":"Glucose",
+      "Fasting":"Fasting",
+      "Random":"Random",
+      "Heart Rate":"Heart Rate",
+      "Temperature":"Temperature",
+      "Respiration Rate":"Respiration"
+    },
+    "noResultFoundText":"No Result Found."
+  },
+  "calendarText":{
+    "closeButtonText":"Close",
+    "clearButtonText":"Clear",
+    "todayButtonText":"Today"
+  },
+  "goCharts":{
+    "resultLabel":"Result",
+    "resultDateLabel":"Result Date",
+    "referenceRangeLabel":"Reference Range"
+  },
+  "pageNotAccessibleText":"Sorry, you're not authorized to see the content.",
+  "helpDesk":{
+    "newQuery":{
+      "newQueryHeader":"New Query",
+      "queryTypeLabel":"Query Type",
+      "categoryLabel":"Category",
+      "categorySelectLabel":"Select",
+      "subCategoryLabel":"Addition Info",
+      "subCategorySelectLabel":"Select",
+      "contactViaLabel":"Please select your preferred way of contact",
+      "emailLabel":"Email",
+      "emailPlaceholderText":"Enter Email",
+      "mobileLabel":"Mobile",
+      "mobilePlaceholderText":"Enter Phone no",
+      "queryDetailLabel":"Query Details",
+      "queryDetailPlaceholderText":"Enter your query",
+      "phoneNoRequiredError":"Phone number can not be blank.",
+      "emailPatternError":"Email should be valid",
+      "emailRequiredError":"Email can not be blank.",
+      "queryRequiredError":"Query can not be blank.",
+      "confirmMessage":"Are you sure?",
+      "cancelButtonLabel":"Cancel",
+      "submitButtonLabel":"Send"
+    },
+    "queryDetail":{
+      "completeQueryMessageText":"Your feedback is valuable for us. In case your query is resolved please press <b>Yes</b>, to continue and type a reply on this conversation please press <b>No</b>.",
+      "messagePlaceholderText":"Enter your message here",
+      "cancelButtonLabel":"Cancel",
+      "replyButtonLabel":"Reply",
+      "queryIDLabel":"Query ID",
+      "queryTypeLabel":"Type",
+      "categoryLabel":"Category",
+      "yes":"Yes",
+      "no":"No"
+    },
+    "list":{
+      "helpDeskListingHeader":"Help Desk Central",
+      "newQueryButtonLabel":"New Query",
+      "searchButtonLabel":"Search queries",
+      "searchPlaceholderText":"Search",
+      "tableHeader":{
+        "idText":"ID",
+        "descriptionText":"Description",
+        "raisedFromText":"Raised From",
+        "AssignedText":"Assigned To",
+        "dateCreatedText":" Last Updated",
+        "statusText":"Status"
+      }
+    },
+    "status":{
+      "active":"Open",
+      "inActive":"Resolved"
+    }
+  },
+  "verifyEmail":{
+    "alreadyVerifiedLabel":"Link has been already verified or expired. Please contact administration.",
+    "verifiedLabel":"Link Verified! Login to the mobile app now."
+  },
+  "browserCompatibility":{
+    "title":"Image Upload",
+    "bcText1":"We apologize for the inconvenience.",
+    "bcText2":"The web browser you are currently using is not supported by the image upload program.",
+    "bcText3":"Please try again using either",
+    "orText":"or"
+  },
+  "responseWorkDetail":{
+    "title":"Response Work Details",
+    "releaseBtn":"Release",
+    "reassign":"Reassign",
+    "labelText":"Label text",
+    "submit":"Submit",
+    "cancel":"Cancel",
+    "questionnaireTitle":"Questionnaire Title Goes Here",
+    "details":{
+      "title":"Lawrence Roseanne L",
+      "born":"Born",
+      "gender":"Gender",
+      "patientID":"Patient ID",
+      "sentOn":"Sent On",
+      "sentBy":"Sent By",
+      "for":"For",
+      "inProgress":"In Progress"
+    },
+    "viewResponse":"View Responses and Files list",
+    "reviewComments":"Review Comments",
+    "completeReviewBtn":"Complete Review"
+  },
+  "responseWorkList":{
+    "title":"Questionnaire Title Goes Here",
+    "details":{
+      "title":"Lawrence Roseanne L",
+      "born":"Born",
+      "gender":"Gender",
+      "patientID":"Patient ID",
+      "sentOn":"Sent On",
+      "sentBy":"Sent By",
+      "for":"For",
+      "inProgress":"In Progress"
+    }
+  },
+  "message":{
+    "currentUser":"Current User",
+    "username":"Username",
+    "encryptedPassword":"Encrypted Password",
+    "enabled":"Enabled"
+  }
+
+
 }
