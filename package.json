@@ -1,6 +1,6 @@
 {
   "name": "go-merge-json",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "The Node based utility used to merge multiple json files into one.",
   "main": "index.js",
   "bin": {
