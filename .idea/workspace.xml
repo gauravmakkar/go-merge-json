@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4864337e-0405-4417-82e9-5498f02c618e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/new.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/test.json" afterPath="" />
-    </list>
+    <list default="true" id="4864337e-0405-4417-82e9-5498f02c618e" name="Default" comment="" />
     <ignored path="go-merge-json.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -199,7 +192,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1469166546585</updated>
-      <workItem from="1469166547965" duration="3427000" />
+      <workItem from="1469166547965" duration="3441000" />
     </task>
     <task id="LOCAL-00001" summary="Added Object.assign for es5">
       <created>1469173084394</created>
@@ -261,7 +254,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3427000" />
+    <option name="totallyTimeSpent" value="3441000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1358" height="735" extended-state="0" />
