@@ -41,5 +41,4 @@ if (process.argv.length <= 3) {
         createFileFromJson(process.argv[2], Object.assign(second_object, first_obj))
     }
 
-
 }
