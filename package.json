@@ -15,6 +15,9 @@
   },
   "author": "Gaurav Makkar",
   "license": "ISC",
+  "devDependencies": {
+    "object-assign":"~4.1.0"
+  },
   "bugs": {
     "url": "https://github.com/gauravmakkar/go-merge-json/issues"
   },
