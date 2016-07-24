@@ -15,5 +15,12 @@ go-merge-json <first-json-file> <second-json-file>
 go-merge-json test/test.json test/new.json
 ```
 The command will update *test.json* file after merging with *new.json*
+## Options
+*create-backup*
+```
+go-merge-json test/test.json test/new.json --create-backup
+```
+The command will create a backup file for test/test.json before updating it.
+
 
 

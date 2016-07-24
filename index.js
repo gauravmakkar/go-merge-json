@@ -6,7 +6,7 @@
 
 var fs = require("fs");
 var path = require('path')
-Object.assign=require("object-assign")
+Object.assign = require("object-assign")
 var objectFromJSON = function (filePath) {
     var _returnObject = null
     try {
@@ -36,8 +36,20 @@ if (process.argv.length <= 3) {
         second_object = objectFromJSON(process.argv[3])
     }
 
+
     if (first_obj && second_object) {
+        if (process.argv.indexOf("--create-backup") > -1) {
+            var backup_file = process.argv[2] + "_backup_" + new Date().getTime()
+            fs.rename(process.argv[2], backup_file, function (err) {
+                if (err) throw err;
+                console.log('Backup file created for ' + process.argv[2] + " at" + backup_file);
+            });
+
+
+        }
         console.log("File " + process.argv[3] + " merged into " + process.argv[2])
         createFileFromJson(process.argv[2], Object.assign(second_object, first_obj))
+
+
     }
 }
