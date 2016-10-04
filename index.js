@@ -6,7 +6,8 @@
 
 var fs = require("fs");
 var path = require('path')
-Object.assign = require("object-assign")
+// Object.assign = require("object-assign")
+Object.assign = require('deep-assign');
 var objectFromJSON = function (filePath) {
     var _returnObject = null
     try {
